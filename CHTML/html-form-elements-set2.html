@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/coursnav.css">
+    <link rel="stylesheet" href="../CSS/courscomponent.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../pho/webb logo.png">
+            <span>webb tool</span>
+        </div>
+
+        <div class="navbarbox" id="navbarbox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../CHTML/homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <div class="responnav" id="responnav">
+        <div class="resplinks">
+            <nav class="responav" id="responav">
+                <a href="../index.html">home</a>
+                <a href="./homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        
+        <div class="menubox" id="menubox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div id="sidenav" >
+            <div style="height: 1.5rem;"></div>  
+        </div>
+        <div id="maincon">
+            <h1 class="mainh1">MASTERING HTML FORMS set 2</h1>
+            <h2 class="mainh2">select element or drop-down list</h2>
+            <p class="para">
+                The <code>&lt;select&gt;</code> element in HTML is used to create a drop-down list, also known as a
+                "select box" or "combo box." It allows users to choose one or more options from a list. Here's how you
+                can use the <code>&lt;select&gt;</code> element:</p>
+
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight15" spellcheck="false">
+<form action="/submit_form" method="post">
+    <label for="country">Choose a country:</label>
+        <select id="country" name="country">
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="au">Australia</option>
+        </select>
+</form>
+</textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+
+            <p class="para bold">In this example:</p>
+            <p class="para">The <code>&lt;select&gt;</code> element has an id attribute and a name attribute. The name
+                attribute is used to identify the select box when the form is submitted, and the id attribute can be
+                used for associating labels or for scripting purposes.</p>
+            <p class="para">Within the <code>&lt;select&gt;</code> element, there are multiple
+                <code>&lt;option&gt;</code> elements. Each <code>&lt;option&gt;</code> represents an item in the
+                drop-down list. The value attribute of each <code>&lt;option&gt;</code> specifies the <span
+                    class="highlight">value</span> that will be sent to the server when the form is submitted.</p>
+            <p class="para m3top">You can also set the selected attribute for one of the <code>&lt;option&gt;</code>
+                elements to make it the default selected option:</p>
+
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight10" spellcheck="false">
+<select name="fruit">
+    <option value="apple">Apple</option>
+    <option value="orange" selected>Orange</option>
+    <option value="banana">Banana</option>
+</select>
+</textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+            <p class="para">In this case, the "Orange" option will be selected by default.</p>
+            <p class="para">The <code>&lt;select&gt;</code> element provides a clean and user-friendly way to gather
+                information from users in a structured manner.</p>
+
+
+                <h2 class="mainh2">textarea and button</h2>
+                <p class="para"><code>&lt;textarea&gt;</code> and <code>&lt;button&gt;</code> are elements used to handle user input and interactions in web forms.</p>
+                <p class="para m3top">The <code>&lt;textarea&gt;</code> element is used to create a multiline text input field, allowing users to enter longer pieces of text, such as paragraphs or comments. It's commonly used when you want to collect more extensive textual information from users.</p>
+                <div class="coderaper">
+                    <h3 class="Example">Example</h3>
+                    <div class="codebox">
+                        <textarea name="code" class="coode hight5" spellcheck="false">
+<label for="comments">Comments:</label>
+<textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                        </textarea>
+                        <button class="codebtn">see output</button>
+                        <iframe class="codeframe"></iframe>
+                    </div>
+                </div>
+                <p class="para bold"><span class="highlight">rows</span> and <span class="highlight">cols</span>: Define the number of rows and columns for the textarea.</p>
+                
+                <p class="para m3top">The <code>&lt;button&gt;</code> element is used to create clickable buttons, which can trigger actions or submit forms. It provides more flexibility than the standard submit button as you can define custom behaviors using JavaScript.</p>
+                <p class="para"><code>&lt;button</code> type="button" onclick="alert('Hello BRO!')"<code>&gt;</code>Click me<code>&lt;/button&gt;</code></p>
+                <p class="para"><button type="button" onclick="alert('Hello BRO!')">Click me</button></p>
+                <p class="para m3top"><span class="highlight bold">type</span>: Specifies the type of button. It can be <span class="highlight bold">submit</span> (default), <span class="highlight bold">reset</span>, or <span class="highlight bold">button</span>. Additionally, you can use <span class="highlight bold">button</span> type to create a button that does not have any default behavior (useful for custom JavaScript actions).</p>
+
+                <p class="para m3top">As we conclude our discussion on HTML form elements, I hope you found the information helpful for creating interactive and user-friendly forms on your websites.</p>
+                <div class="inpro">
+                    <p class="para">the goal here is not to memorize every single tag or get stuck on intricate details. the goal is not perfection but practical understanding and the ability to build things. Keep enjoying the learning process, and don't hesitate to explore and experiment with what you've learned.</p>
+                </div>
+        </div>
+    </main>
+</body>
+<script src="../JS/cHTML.js"></script>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/coursnav.css">
+    <link rel="stylesheet" href="../CSS/courscomponent.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../pho/webb logo.png">
+            <span>webb tool</span>
+        </div>
+
+        <div class="navbarbox" id="navbarbox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../CHTML/homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <div class="responnav" id="responnav">
+        <div class="resplinks">
+            <nav class="responav" id="responav">
+                <a href="../index.html">home</a>
+                <a href="./homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        
+        <div class="menubox" id="menubox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div id="sidenav" >
+            <div style="height: 1.5rem;"></div>  
+        </div>
+        <div id="maincon">
+            <h1 class="mainh1">Blast off into the semantic web!</h1>
+            <p class="para bold">Semantic tags in HTML provide meaning to the structure and content of a webpage.</p>
+            <p class="para">Semantic HTML involves using HTML tags to convey the structure and meaning of the content within a web page, rather than just specifying its appearance. By choosing the appropriate semantic tags, you make your HTML more readable for both developers and search engines, </p>
+
+            <!-- example -->
+            <!-- img -->
+
+            <p class="para m3top">Semantic HTML helps in the following ways:</p>
+            <div class="listbox">
+                <ol>
+                    <li><span class="listpointer">Accessibility</span>: Semantic HTML improves accessibility for people with disabilities who use screen readers or other assistive technologies. Screen readers rely on the semantic structure of the document to convey information to users.</li>
+                    <li><span class="listpointer">Search Engine Optimization (SEO)</span>: Search engines use the structure and meaning of your HTML content to better understand the context of your web page. Using semantic tags can contribute to improved search engine rankings.</li>
+                    <li><span class="listpointer">Code Readability</span>: Semantic HTML makes your code more readable and understandable for other developers who may work on the project. It also helps in maintaining and updating the codebase.</li>
+                </ol>
+            </div>
+<h2 class="mainh2"> Here are some commonly used semantic tags:</h2>
+
+<!-- img -->
+
+<p class="para">Think of semantic tags as the different compartments in your rocket. Each compartment (tag) has a specific purpose.</p>
+<h3 class="introh3 m3top"><code>&lt;header&gt;:</code></h3>
+<p class="para">Represents the header of a document or section and can contain headings, logos, and navigation.</p>
+
+<div class="coderaper">
+    <h3 class="Example">Example</h3>
+    <div class="codebox">
+        <textarea name="code" class="coode hight15" spellcheck="false" readonly>
+<header>
+<h1>Website Title</h1>
+ <nav>
+     <ul>
+     <li><a href="#">Home</a></li>
+     <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    </ul>
+ </nav>
+</header> </textarea>
+    </div>
+</div>
+<div class="outputbox">
+    <p class="outptext">output</p>
+    <div class="output">
+    <header style="display: flex; align-items: center; justify-content: space-between; padding: 0 2%;">
+        <h1>Website Title</h1>
+        <nav>
+            <ul style="display: flex; list-style: none;">
+              <li style="margin: 0 0.3rem; "><a style=" cursor: pointer; text-decoration: none; color: black;" >Home</a></li>
+              <li style="margin: 0 0.3rem; "><a style=" cursor: pointer; text-decoration: none; color: black;" >About</a></li>
+              <li style="margin: 0 0.3rem; "><a style=" cursor: pointer; text-decoration: none; color: black;">Contact</a></li>
+            </ul>
+          </nav>
+      </header>
+    </div>
+</div>
+<h3 class="introh3 m3top"><code>&lt;nav&gt;:</code></h3>
+<p class="para">Defines a navigation menu.</p>
+
+<div class="coderaper">
+    <h3 class="Example">Example</h3>
+    <div class="codebox">
+        <textarea name="code" class="coode hight10" spellcheck="false" readonly>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+        </textarea>
+    </div>
+</div>
+
+<div class="outputbox">
+    <p class="outptext">output</p>
+    <div class="output">
+        <nav>
+            <ul style="display: flex; list-style: none;">
+              <li style="margin: 0 0.3rem; "><a style=" cursor: pointer; text-decoration: none; color: black;" >Home</a></li>
+              <li style="margin: 0 0.3rem; "><a style=" cursor: pointer; text-decoration: none; color: black;" >About</a></li>
+              <li style="margin: 0 0.3rem; "><a style=" cursor: pointer; text-decoration: none; color: black;">Contact</a></li>
+            </ul>
+          </nav>
+    </div>
+</div>
+<p class="para">The navigation menu helps visitors find their way around your site. It's like the rocket's guidance system.</p>
+
+<h3 class="introh3 m3top"><code>&lt;main&gt;:</code></h3>
+<p class="para"> Represents the main content of the document. It should not include headers, footers, or sidebars.</p>
+<div class="coderaper">
+    <h3 class="Example">Example</h3>
+    <div class="codebox">
+        <textarea name="code" class="coode hight10" spellcheck="false" readonly> 
+<main>
+    <article>
+        <h2>Article Title</h2>
+         <p>Article content goes here.</p>
+    </article>
+    <!-- More articles or content -->
+</main>
+        </textarea>
+    </div>
+</div>
+
+<div class="outputbox">
+    <p class="outptext">output</p>
+    <div class="output">
+        <main>
+            <article>
+              <h2>Article Title</h2>
+              <p>Article content goes here.</p>
+            </article>
+            <!-- More articles or content -->
+          </main>
+    </div>
+</div>
+
+<h3 class="introh3 m3top"><code>&lt;article&gt;:</code></h3>
+<p class="para">Represents an independent, self-contained piece of content, such as a news article or blog post.</p>
+
+<div class="coderaper">
+    <h3 class="Example">Example</h3>
+    <div class="codebox">
+        <textarea name="code" class="coode hight10" spellcheck="false" readonly>
+<article>
+    <h2>Article Title</h2>
+    <p>Article content goes here.</p>
+</article>
+        </textarea>
+    </div>
+</div>
+
+<div class="outputbox">
+    <p class="outptext">output</p>
+    <div class="output">
+        <article>
+            <h2>Article Title</h2>
+            <p>Article content goes here.</p>
+          </article>
+    </div>
+</div>
+
+<h3 class="introh3 m3top"><code>&lt;section&gt;:</code></h3>
+<p class="para">Represents a generic section of content. It's often used to group related content together.</p>
+
+<div class="coderaper">
+    <h3 class="Example">Example</h3>
+    <div class="codebox">
+        <textarea name="code" class="coode hight15" spellcheck="false" readonly>
+<section>
+    <h2>Section Title</h2>
+    <div>
+        <p>Section content goes here.</p>
+    </div>
+
+    <div>
+         <p>Section content goes here.</p>
+    </div>
+
+    <div>
+         <p>Section content goes here.</p>
+    </div>
+</section>
+        </textarea>
+    </div>
+</div>
+
+<div class="outputbox">
+    <p class="outptext">output</p>
+    <div class="output">
+        <div>
+            <h2 style="text-align: center;">Section Title</h2>
+            <div style="width: 80%; height: 3rem; background-color:lightcoral; margin: 1rem;">
+                <p>Section content goes here.</p>
+            </div>
+            <div style="width: 80%; height: 3rem; background-color:lightgreen ; margin: 1rem;">
+                <p>Section content goes here.</p>
+            </div>
+            <div style="width: 80%; height: 3rem; background-color:lightskyblue; margin: 1rem;">
+                <p>Section content goes here.</p>
+            </div>
+          </div>
+    </div>
+</div>
+
+<h3 class="introh3 m3top"><code>&lt;footer&gt;:</code></h3>
+<p class="para">Represents a footer section, typically containing metadata, copyright information, or links to related documents.</p>
+
+<div class="coderaper">
+    <h3 class="Example">Example</h3>
+    <div class="codebox">
+        <textarea name="code" class="coode hight10" spellcheck="false" readonly>
+<footer>
+    <h3>Website logo</h3>
+    <nav>
+        <a href="url">home</a>
+        <a href="url">anout</a>
+        <a href="url">more</a>
+    </nav>
+    <p>&copy; 2023 My Website</p>
+</footer>
+        </textarea>
+    </div>
+</div>
+
+<div class="outputbox">
+    <p class="outptext">output</p>
+    <div class="output">
+        <div style="background-color: black; color: whitesmoke; padding: 10px;">
+            <h3 style="margin-bottom: 1rem;">Website logo</h3>
+            <nav style="margin: 1rem 2rem;">
+                <a style="cursor: pointer; color: rgb(189, 189, 189);">home</a>
+                <a style="cursor: pointer; color: rgb(189, 189, 189);">anout</a>
+                <a style="cursor: pointer; color: rgb(189, 189, 189);">more</a>
+            </nav>
+            <p style="text-align: center; font-size: 0.6rem;">&copy; 2023 My Website</p>
+        </div>
+    </div>
+</div>
+
+<div class="inpro">
+    
+    <p class="para">Remember, just as a well-designed rocket mission increases the chances of a successful launch, well-structured HTML with semantic tags enhances the user experience and makes your content more accessible and understandable.</p>
+    </p>
+</div>
+<p class="para">By adopting semantic HTML practices, you can create well-structured and meaningful documents that are both human-readable and machine-friendly. This can lead to better accessibility, improved SEO, and easier maintenance of your web projects.
+</p>
+        </div>
+    </main>
+</body>
+<script src="../JS/cHTML.js"></script>
+</html>

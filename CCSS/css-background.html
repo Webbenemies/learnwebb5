@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/coursnav.css">
+    <link rel="stylesheet" href="../CSS/courscomponent.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../pho/webb logo.png">
+            <span>webb orbit</span>
+        </div>
+        <div class="links">
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../CHTML/homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <div id="sidenav"></div>
+        <div id="maincon">
+            <h1 class="mainh1">Beyond Basics: CSS Backgrounds</h1>
+            <p class="para">Today, elevate your skills with advanced CSS background properties. From mastering intricate image manipulation to harnessing the power of Shorthand and so on, unlock the secrets of Backgrounds</p>
+            <p class="para m3top">In CSS, the background property is used to define the background style for an element. This property can be used to set various background-related properties such as color, image, position, repeat, size ect.</p>
+
+            <div class="outputbox">
+                <div class="output">
+            <div class="bg" style="height: 20rem; background-color: black ;
+            background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../pho/auto.jpg);
+            background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
+                <h1 style="color: white; font-size: 2vw;">CSS Background Styling Example</h1>
+            </div>
+                </div>
+            </div>
+
+            <p class="para">This example sets a white background color, a background image centered, without repeating, and covering the entire element. Adjust these properties based on your specific design needs.</p>
+
+            <h2 class="mainh2">Background Color</h2>
+            <p class="para">To set the background color of an HTML element using CSS, you can use the <span class="highlight bold">background-color</span> property. </p>
+
+            <div class="syntax">
+                <pre>
+                    /* Set the background color of an element to light blue */
+
+                    selector {
+                        background-color: lightblue;                
+                    }
+                </pre>
+            </div>
+            <p class="para">You can replace "lightblue" with any valid color value, such as a color name, hexadecimal color code, RGB value, or HSL value.</p>
+
+            <h2 class="mainh2">Background Image</h2>
+            <p class="para">To set a background image for an HTML element using CSS, you can use the background-image property.</p>
+            <div class="syntax">
+                <pre>
+                    /* Set a background image for an element */
+
+                    selector {
+                    background-image: url('path/to/your/image.jpg');
+                    }
+                </pre>
+            </div>
+            <p class="para">Replace 'path/to/your/image.jpg' with the actual path to your image file. You can use various image file formats such as JPEG, PNG, GIF, or others. </p>
+
+            <h2 class="mainh2">Background Size</h2>
+            <p class="para">
+                The<span class="highlight bold"> background-size</span>  property in CSS is used to specify the size of a background image within its containing element. You can set the size using various values, such as keywords, percentages, or length units. Here are some examples:</p>
+                <div class="listbox">
+                    <p class="listpointer bold">Values:</p>
+                    <ol>
+                        <li><span class="listpointer">auto: </span>The browser automatically calculates the size based on the actual size of the image.</li>
+                        <div class="csseditor">
+                            <div class="writecode">
+                                <textarea  class="codearea" spellcheck="false" name="csseditor">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Background</title>
+</head>
+<body>
+    <div class="background"></div>
+</body>
+</html>
+                                </textarea>
+                                <textarea  class="codearea" spellcheck="false" name="csseditor">
+.background{
+    width: 100%;
+    height: 90vh;
+
+    background-image: url(../pho/auto.jpg);
+    background-size: auto;
+}                                    
+                                </textarea>
+                            </div>
+                            <div class="showcode">
+                                <iframe class="codeoutput" frameborder="0"></iframe>
+                            </div>
+                        </div>
+
+                        <li><span class="listpointer">cover: </span>The background image is scaled to cover the entire container, maintaining its aspect ratio. This may result in cropping.</li>
+                        <div class="csseditor">
+                            <div class="writecode">
+                                <textarea  class="codearea" spellcheck="false" name="csseditor">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Background</title>
+</head>
+<body>
+    <div class="background"></div>
+</body>
+</html>
+                                </textarea>
+                                <textarea  class="codearea" spellcheck="false" name="csseditor">
+.background{
+    width: 100%;
+    height: 90vh;
+
+    background-image: url(../pho/auto.jpg);
+    background-size: cover;
+}                                    
+                                </textarea>
+                            </div>
+                            <div class="showcode">
+                                <iframe class="codeoutput" frameborder="0"></iframe>
+                            </div>
+                        </div>
+
+                        <li><span class="listpointer">contain: </span>The background image is scaled to fit within the container, maintaining its aspect ratio. This may result in empty space.</li>
+                        <div class="csseditor">
+                            <div class="writecode">
+                                <textarea  class="codearea" spellcheck="false" name="csseditor">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Background</title>
+</head>
+<body>
+    <div class="background"></div>
+</body>
+</html>
+                                </textarea>
+                                <textarea  class="codearea" spellcheck="false" name="csseditor">
+.background{
+    width: 100%;
+    height: 90vh;
+
+    background-image: url(../pho/auto.jpg);
+    background-size: contain;
+}                                    
+                                </textarea>
+                            </div>
+                            <div class="showcode">
+                                <iframe class="codeoutput" frameborder="0"></iframe>
+                            </div>
+                        </div>
+
+                        <li><span class="listpointer">Length Units: </span>You can also use specific length units to define the width and height of the background image.</li>
+                        <div class="csseditor">
+                            <div class="writecode">
+                                <textarea  class="codearea" spellcheck="false" name="csseditor">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Background</title>
+</head>
+<body>
+    <div class="background"></div>
+</body>
+</html>
+                                </textarea>
+                                <textarea  class="codearea" spellcheck="false" name="csseditor">
+.background{
+    width: 100%;
+    height: 90vh;
+
+    background-image: url(../pho/auto.jpg);
+    background-size: 200px 150px;
+}                                    
+                                </textarea>
+                            </div>
+                            <div class="showcode">
+                                <iframe class="codeoutput" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </ol>
+                </div>
+
+                <h2 class="mainh2">Background Repeat</h2>
+                <p class="para">
+                    The background-repeat property in CSS is used to control how a background image is repeated within its containing element. There are several values you can use to achieve different results:</p>
+                    <div class="listbox">
+                        <p class="listpointer bold">Values:</p>
+                        <ol>
+                            
+                            <li><span class="listpointer">repeat: </span>The background image is repeated both horizontally and vertically. This is the default value.</li>
+                            <div class="csseditor">
+                                <div class="writecode">
+                                    <textarea  class="codearea" spellcheck="false" name="csseditor">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>CSS Background</title>
+    </head>
+    <body>
+        <div class="background"></div>
+    </body>
+    </html>
+                                    </textarea>
+                                    <textarea  class="codearea" spellcheck="false" name="csseditor">
+    .background{
+        width: 100%;
+        height: 90vh;
+    
+        background-image: url(../pho/auto.jpg);
+        background-size: 200px;
+        background-repeat: repeat;
+    }                                    
+                                    </textarea>
+                                </div>
+                                <div class="showcode">
+                                    <iframe class="codeoutput" frameborder="0"></iframe>
+                                </div>
+                            </div>
+
+                            <li><span class="listpointer">repeat-x: </span>The background image is repeated only horizontally.</li>
+                            <div class="csseditor">
+                                <div class="writecode">
+                                    <textarea  class="codearea" spellcheck="false" name="csseditor">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>CSS Background</title>
+    </head>
+    <body>
+        <div class="background"></div>
+    </body>
+    </html>
+                                    </textarea>
+                                    <textarea  class="codearea" spellcheck="false" name="csseditor">
+    .background{
+        width: 100%;
+        height: 90vh;
+    
+        background-image: url(../pho/auto.jpg);
+        background-size: 200px;
+        background-repeat: repeat-x;
+    }                                    
+                                    </textarea>
+                                </div>
+                                <div class="showcode">
+                                    <iframe class="codeoutput" frameborder="0"></iframe>
+                                </div>
+                            </div>
+
+                            <li><span class="listpointer">repeat-y: </span> The background image is repeated only vertically.</li>
+                            <div class="csseditor">
+                                <div class="writecode">
+                                    <textarea  class="codearea" spellcheck="false" name="csseditor">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>CSS Background</title>
+    </head>
+    <body>
+        <div class="background"></div>
+    </body>
+    </html>
+                                    </textarea>
+                                    <textarea  class="codearea" spellcheck="false" name="csseditor">
+    .background{
+        width: 100%;
+        height: 90vh;
+    
+        background-image: url(../pho/auto.jpg);
+        background-size:200px;
+        background-repeat: repeat-y;
+    }                                    
+                                    </textarea>
+                                </div>
+                                <div class="showcode">
+                                    <iframe class="codeoutput" frameborder="0"></iframe>
+                                </div>
+                            </div>
+
+                            <li><span class="listpointer">no-repeat: </span>The background image is not repeated.</li>
+                            <div class="csseditor">
+                                <div class="writecode">
+                                    <textarea  class="codearea" spellcheck="false" name="csseditor">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>CSS Background</title>
+    </head>
+    <body>
+        <div class="background"></div>
+    </body>
+    </html>
+                                    </textarea>
+                                    <textarea  class="codearea" spellcheck="false" name="csseditor">
+    .background{
+        width: 100%;
+        height: 90vh;
+    
+        background-image: url(../pho/auto.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }                                    
+                                    </textarea>
+                                </div>
+                                <div class="showcode">
+                                    <iframe class="codeoutput" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </ol>
+                    </div>
+
+            <h2 class="mainh2">Background Position</h2>
+            <p class="para">the next topic is Background Position. The <span class="highlight bold">background-position</span> property in CSS is used to set the starting position of a background image within its containing element. You can specify the position using keywords, percentages, or length units.</p>
+            <p class="para">The syntax for the <span class="highlight bold">background-position</span> property is as follows:</p>
+
+            <div class="syntax">
+                <pre>
+                    background-position: X Y;
+                </pre>
+            </div>
+            <p class="para">Here, X and Y represent the horizontal and vertical positions of the background image, respectively. These positions can be specified using different units, such as pixels, percentages, or keywords.</p>
+            <div class="listbox">
+                <ul>
+                    <li><span class="listpointer">Keywords: </span>top, bottom, left, right, center: These keywords can be used to align the background image to the top, bottom, left, right, or center of the element.</li>
+                    <div class="csseditor">
+                        <div class="writecode">
+                            <textarea  class="codearea" spellcheck="false" name="csseditor">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Background</title>
+</head>
+<body>
+    <div class="background"></div>
+</body>
+</html>
+                            </textarea>
+                            <textarea  class="codearea" spellcheck="false" name="csseditor">
+.background{
+    width: 100%;
+    height: 90vh;
+                                
+    background-image: url(../pho/auto.jpg);
+    background-size: cover;
+
+    background-position: center;
+}                                  
+                            </textarea>
+                        </div>
+                        <div class="showcode">
+                            <iframe class="codeoutput" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                    <p class="para">you can try other values</p>
+                    <li><span class="listpointer">Percentage: </span>Specifies the position as a percentage of the element's width or height. For example, 50% 50% would center the background image.</li>
+                    <div class="csseditor">
+                        <div class="writecode">
+                            <textarea  class="codearea" spellcheck="false" name="csseditor">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Background</title>
+</head>
+<body>
+    <div class="background"></div>
+</body>
+</html>
+                            </textarea>
+                            <textarea  class="codearea" spellcheck="false" name="csseditor">
+.background{
+    width: 100%;
+    height: 90vh;
+                                
+    background-image: url(../pho/auto.jpg);
+    background-size: cover;
+
+    background-position: 80% 60%;
+}                                  
+                            </textarea>
+                        </div>
+                        <div class="showcode">
+                            <iframe class="codeoutput" frameborder="0"></iframe>
+                        </div>
+                    </div>
+
+                    <li><span class="listpointer">Combining Values: </span>You can combine values to create more complex positioning. For example, right top or 10% 20%.</li>
+                    <div class="csseditor">
+                        <div class="writecode">
+                            <textarea  class="codearea" spellcheck="false" name="csseditor">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Background</title>
+</head>
+<body>
+    <div class="background"></div>
+</body>
+</html>
+                            </textarea>
+                            <textarea  class="codearea" spellcheck="false" name="csseditor">
+.background{
+    width: 100%;
+    height: 90vh;
+                                
+    background-image: url(../pho/auto.jpg);
+    background-size: cover;
+
+    background-position: center bottom;
+}                                  
+                            </textarea>
+                        </div>
+                        <div class="showcode">
+                            <iframe class="codeoutput" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                    <p class="para">In this example, the background image will be centered horizontally and aligned with the bottom of the element.</p>
+                </ul>
+            </div>
+
+            <h2 class="mainh2">background Attachment</h2>
+            <p class="para">
+                The <span class="highlight bold">background-attachment</span> property in CSS is used to control whether a background image should scroll with the content or remain fixed in place.</p>
+                <p class="para">This property can take one of the following values:</p>
+
+                <div class="listbox">
+                    <ul>
+                        <li><span class="listpointer">scroll: </span>The background image will scroll with the content. This is the default value.</li>
+                        <li><span class="listpointer">fixed: </span>The background image will remain fixed in place while the content scrolls.</li>
+                        <li><span class="listpointer">local: </span>The background image will scroll with the element's contents, but it won't move out of view with the overall page scroll.</li>
+                        <li><span class="listpointer">initial: </span>Sets the property to its default value.</li>
+                        <li><span class="listpointer">inherit: </span> Inherits the property from its parent element.</li>
+                    </ul>
+                </div>
+                <div class="csseditor">
+                    <div class="writecode">
+                        <textarea  class="codearea" spellcheck="false" name="csseditor">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Background</title>
+</head>
+<body>
+    <div class="background"></div>
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloribus voluptatem, et dolorem distinctio nesciunt esse voluptatum, consequuntur tenetur quibusdam rerum autem quisquam nam omnis beatae alias debitis ut quam architecto reprehenderit natus explicabo voluptate animi nisi. Vel veniam, distinctio hic neque cum repellendus ipsa in corrupti alias, dignissimos unde nemo. Error commodi nam culpa, nulla accusantium quaerat quae architecto aut a quis, recusandae nesciunt consequuntur quos explicabo aspernatur dolorum rem! Similique est veritatis facere. Recusandae natus odio quibusdam voluptatem mollitia modi ipsa rerum? Possimus dolor libero voluptatum sit magni numquam cumque laborum aut sequi sint quos cum atque, fuga accusantium vero veritatis perspiciatis officiis velit. Soluta amet dolor at deleniti, sit commodi aspernatur assumenda sed nisi delectus adipisci earum culpa quos temporibus ab, ullam unde provident? Est, consectetur atque ducimus quo corporis saepe fuga. Fuga officia qui, ex exercitationem eaque illum quasi quis, iure veritatis in distinctio facilis mollitia. Animi tenetur sint ut sit magnam, ducimus quis nam? Veniam omnis amet ipsam officiis, ex, ipsum ut veritatis laudantium dolor nemo sit blanditiis enim. Minus quis blanditiis autem, voluptatum rerum sint ea eaque illum architecto amet unde omnis alias pariatur repellat vero sapiente harum praesentium sunt maiores, ab nemo laudantium.
+</body>
+</html>
+                        </textarea>
+                        <textarea  class="codearea" spellcheck="false" name="csseditor">
+.background{
+     width: 100%;
+    height: 90vh;
+                                                            
+    background-image: url(../pho/auto.jpg);
+    background-size: cover;
+    background-position: center bottom;
+
+    background-attachment:fixed;
+}  
+                        </textarea>
+                    </div>
+                    <div class="showcode">
+                        <iframe class="codeoutput" frameborder="0"></iframe>
+                    </div>
+                </div>
+<p class="para">In this example, the background image is set to a fixed position, creating a "fixed background" effect. As the content of the element scrolls, the background image remains in place.</p>
+
+<div class="csseditor">
+    <div class="writecode">
+        <textarea  class="codearea" spellcheck="false" name="csseditor">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Background</title>
+</head>
+<body>
+<div class="background"></div>
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloribus voluptatem, et dolorem distinctio nesciunt esse voluptatum, consequuntur tenetur quibusdam rerum autem quisquam nam omnis beatae alias debitis ut quam architecto reprehenderit natus explicabo voluptate animi nisi. Vel veniam, distinctio hic neque cum repellendus ipsa in corrupti alias, dignissimos unde nemo. Error commodi nam culpa, nulla accusantium quaerat quae architecto aut a quis, recusandae nesciunt consequuntur quos explicabo aspernatur dolorum rem! Similique est veritatis facere. Recusandae natus odio quibusdam voluptatem mollitia modi ipsa rerum? Possimus dolor libero voluptatum sit magni numquam cumque laborum aut sequi sint quos cum atque, fuga accusantium vero veritatis perspiciatis officiis velit. Soluta amet dolor at deleniti, sit commodi aspernatur assumenda sed nisi delectus adipisci earum culpa quos temporibus ab, ullam unde provident? Est, consectetur atque ducimus quo corporis saepe fuga. Fuga officia qui, ex exercitationem eaque illum quasi quis, iure veritatis in distinctio facilis mollitia. Animi tenetur sint ut sit magnam, ducimus quis nam? Veniam omnis amet ipsam officiis, ex, ipsum ut veritatis laudantium dolor nemo sit blanditiis enim. Minus quis blanditiis autem, voluptatum rerum sint ea eaque illum architecto amet unde omnis alias pariatur repellat vero sapiente harum praesentium sunt maiores, ab nemo laudantium.
+</body>
+</html>
+        </textarea>
+        <textarea  class="codearea" spellcheck="false" name="csseditor">
+.background{
+width: 100%;
+height: 90vh;
+                                            
+background-image: url(../pho/auto.jpg);
+background-size: cover;
+background-position: center bottom;
+
+background-attachment:scroll;
+}  
+        </textarea>
+    </div>
+    <div class="showcode">
+        <iframe class="codeoutput" frameborder="0"></iframe>
+    </div>
+</div>
+<p class="para">As you scroll down the page, the background image will move along with the content.</p>
+
+<h2 class="mainh2">background shorthand property</h2>
+<p class="para">The background shorthand property in CSS is used to set various background properties in a single declaration. This can make your CSS code more concise and easier to read. The background property can take multiple values, separated by spaces, and the order of the values is specific.</p>
+<p class="para"> Here's the general syntax:</p>
+
+<div class="syntax">
+    <pre>
+        background: background-color background-image background-repeat background-attachment background-position / background-size;
+    </pre>
+</div>
+<p class="para">You can omit values or use them in any order, but it's generally a good practice to follow the specified order for better readability. </p>
+
+<div class="csseditor">
+    <div class="writecode">
+        <textarea  class="codearea" spellcheck="false" name="csseditor">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Background</title>
+</head>
+<body>
+    <div class="background"></div>
+</body>
+</html>
+        </textarea>
+        <textarea  class="codearea" spellcheck="false" name="csseditor">
+.background{
+width: 100%;
+height: 90vh;
+
+background: #000000 url(../pho/auto.jpg) center center/contain no-repeat;
+}             
+        </textarea>
+    </div>
+    <div class="showcode">
+        <iframe class="codeoutput" frameborder="0"></iframe>
+    </div>
+</div>
+<div class="listbox">
+    <ol>
+        <li><span class="listpointer">#000000 </span>is the background color</li>
+        <li><span class="listpointer">url('path/to/your/image.jpg') </span>is the background image</li>
+        <li><span class="listpointer">center center </span>is the background position</li>
+        <li><span class="listpointer">contain </span>is the background size</li>
+        <li><span class="listpointer">no-repeat </span>is the background repeat</li>
+    </ol>
+</div>
+<p class="para">Adjust the values based on your specific design needs. Using the background shorthand property can help simplify your CSS and make it more efficient.</p>
+<div class="inpro">
+    <p class="para">Great! If you've successfully implemented the desired background styling using CSS, congratulations! CSS provides a lot of flexibility for creating visually appealing and dynamic backgrounds on your web pages</p>
+    <p class="para">Experiment with different properties and values to achieve the desired look and feel for your web pages.</p>
+
+</div>
+        </div>
+    </main>
+</body>
+<script src="../JS/cCSS.js"></script>
+</html>

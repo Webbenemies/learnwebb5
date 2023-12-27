@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Syntax</title>
+    <link rel="stylesheet" href="../CSS/coursnav.css">
+    <link rel="stylesheet" href="../CSS/courscomponent.css">
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../pho/webb logo.png">
+            <span>webb orbit</span>
+        </div>
+        <div class="links">
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../CHTML/homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <div id="sidenav"></div>
+        <div id="maincon">
+            <h1 class="mainh1">Decoding CSS: A Syntax Symphony</h1>
+            <p class="para">The syntax of CSS is straightforward and consists of rulesets that define how HTML elements should be styled. Here is the basic syntax:</p>
+
+            <div class="photobox">
+                <img src="../pho/syntaxofcss.png"class="photo">
+                <p class="photop">css syntax</p>
+            </div>
+
+            <p class="para bold">Let's break down the components of this syntax:</p>
+            <h2 class="mainh2">Selector:</h2>
+            <p class="para">Selectors target HTML elements to apply styles. They can be element names, class names, IDs, or other more complex patterns.</p>
+            <p class="para">Here are some common CSS selectors:</p>
+            <div class="listbox">
+                <ol>
+                    
+                    <li><span class="listpointer">Element Selector: </span>Selects all instances of a specified HTML element.</li>
+                    <div class="syntax">
+                        <pre>
+                            h1 {
+                                /* styles for all <code>&lt;h1&gt;</code> elements */
+                              }
+                        </pre>
+                    </div>
+
+                    <li><span class="listpointer">ID Selector: </span>Selects a specific element with a given ID attribute.</li>
+                    <div class="syntax">
+                        <pre>
+                            #header {
+                                /* styles for the element with id="header" */
+                              }
+                        </pre>
+                    </div>
+
+                    <li><span class="listpointer">Class Selector: </span>Selects all elements with a specified class attribute.</li>
+                    <div class="syntax">
+                        <pre>
+                            .highlight {
+                                /* styles for all elements with class="highlight" */
+                              }
+                        </pre>
+                    </div>
+
+                    <li><span class="listpointer">Descendant Selector: </span>Selects all instances of a specified element that are descendants of a specified element.</li>
+                    <div class="syntax">
+                        <pre>
+                            article p {
+                                /* styles for all <code>&lt;p&gt;</code> elements within an <code>&lt;article&gt;</code> */
+                              }
+                        </pre>
+                    </div>
+                </ol>
+            </div>
+            <p class="para">These are just a few examples, and CSS provides a wide range of selectors to target elements with precision. Additionally, selectors can be combined and nested to create more complex and specific rules.</p>
+            <p class="para">Understanding and effectively using CSS selectors is crucial for efficiently styling web pages.</p>
+            <h2 class="mainh2">Declaration Block:</h2>
+            <p class="para">Enclosed in curly braces `<span class="highlight">{ }</span>`, the declaration block contains one or more declarations separated by semicolons.</p>
+            <div class="syntax">
+                <pre>
+                    selector {
+                        property1: value1;
+                        property2: value2;
+                        /* additional properties and values */
+                      }
+                </pre>
+            </div>
+            <p class="para bold">A declaration consists of a property and its corresponding value, separated by a colon.</p>
+            <h2 class="mainh2">properties and values: </h2>
+            <p class="para">CSS properties and values are the building blocks of stylesheets. Properties define the aspects of an HTML element that you want to style, and values specify the settings for those properties.</p>
+            <div class="listbox">
+                <ol>
+                    <li><span class="listpointer">Color: </span></li>
+                    <div class="syntax">
+                        <pre>
+                            p {
+                                color: blue;
+                              }
+                        </pre>
+                    </div>
+                    <li><span class="listpointer">Property: </span>color</li>
+                    <li><span class="listpointer">Value : </span>Named colors ( `red`, `blue` )</li>
+                </ol>
+            </div>
+            <p class="para"> A CSS property is an attribute of an HTML element that you can set to control its appearance or behavior. Each property has a specific purpose, and you can assign values to these properties to define how you want the HTML element to be styled.
+            </p>
+            <p class="para m3top">Here's a basic structure of a CSS rule, which includes a property and its corresponding value:</p>
+            <div class="csseditor">
+                <div class="writecode">
+                    <textarea  class="codearea" spellcheck="false" name="csseditor">
+<p> Physicist John Archibald Wheeler's 1971 no-hair theorem proposes that all black holes can be characterized by just three observable properties: mass, electric charge, and angular momentum. </p>
+                    </textarea>
+                    <textarea  class="codearea" spellcheck="false" name="csseditor">
+p{
+    color:blue;
+}
+                    </textarea>
+                </div>
+                <div class="showcode">
+                    <iframe class="codeoutput" frameborder="0"></iframe>
+                </div>
+            </div>
+                <div class="listbox">
+                    <ul>
+                        <li><span class="listpointer">Selector: </span> p targets all <code>&lt;p&gt;</code> elements.</li>
+                        <li><span class="listpointer">Property: </span>color specifies the text color.</li>
+                        <li><span class="listpointer">Value: </span> blue sets the text color to blue.</li>
+                    </ul>
+                </div>
+                <p class="para">You can have multiple properties and values within a rule, separated by semicolons. This basic structure forms the foundation for styling HTML elements with CSS.</p>
+                <p class="para">just as a rocket needs careful planning for a successful launch, CSS requires thoughtful styling choices to make your web page visually appealing and functional.
+                </p>
+        </div>
+    </main>
+</body>
+<script src="../JS/cCSS.js"></script>
+</html>
+
+

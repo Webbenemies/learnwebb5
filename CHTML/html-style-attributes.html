@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/coursnav.css">
+    <link rel="stylesheet" href="../CSS/courscomponent.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../pho/webb logo.png">
+            <span>webb tool</span>
+        </div>
+
+        <div class="navbarbox" id="navbarbox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../CHTML/homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <div class="responnav" id="responnav">
+        <div class="resplinks">
+            <nav class="responav" id="responav">
+                <a href="../index.html">home</a>
+                <a href="./homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        
+        <div class="menubox" id="menubox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div id="sidenav" >
+            <div style="height: 1.5rem;"></div>  
+        </div>
+        <div id="maincon">
+            <h1 class="mainh1">let's explore style attribute</h1>
+            <p class="para">The `style` attribute in HTML is used to apply inline styles to an HTML element.</p>
+            <p class="para">Inline styles allow you to specify the presentation or formatting of an element directly within its HTML tag.</p>
+
+            <div class="photobox">
+                <img src="../pho/stylesyntex.png"class="photo">
+                <p class="photop">The syntax of the <span class="highlight bold">style</span> attribute</p>
+            </div>
+            <p class="para bold highlight m3top">Here's a breakdown of the syntax:</p>
+            <div class="listbox">
+                <ol>
+                    <li><span class="listpointer">ELEMENT TAG</span>: This is the HTML element to which you want to apply the inline style. It can be any HTML element, such as a <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;button&gt;</code>, or any other HTML tag.</li>
+                    <li><span class="listpointer">STYLE</span>: This is the name of the attribute you're using. It's always <span class="highlight">style</span> in this context.</li>
+                    <li><span class="listpointer">PROPERTY</span>: This is the CSS property you want to set, such as <span class="highlight">color,</span> <span class="highlight">font-family, </span><span class="highlight">background-color,</span> <span class="highlight">margin</span> etc. You specify the property you want to style.</li>
+                    <li><span class="listpointer">VALUE</span>: This is the value you want to assign to the CSS property. It can be a color, a size, a length, or any valid CSS value for the chosen property.</li>
+                </ol>
+            </div>
+            <p class="para">Here's an example of using the `style` attribute to change the text color of a paragraph element:</p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight5" spellcheck="false">
+<p style="color:crimson;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus pariatur non, quas similique obcaecati nostrum quam beatae tempore quod eligendi aut soluta nisi provident ad expedita reprehenderit tempora quibusdam voluptate.</p>                        
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+            <p class="para">In this example, we're setting the text color property to "crimson" for the <code>&lt;p&gt;</code> element, making the text appear in crimson.</p>
+            <p class="para m2top">You can apply multiple CSS properties by separating them with semicolons within the `style` attribute. For instance:</p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight5" spellcheck="false">
+<p style="font-size:20px; color:white; font-family:cursive; background-color: teal;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam expedita officia libero aliquam architecto delectus totam rerum vel vero officiis voluptate corrupti iste itaque enim commodi maiores molestias, cumque praesentium.</p>
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+            <p class="para">This sets the text color to white, font size to 20 pixels, font family to cursive and background color to yellow for the <code>&lt;p&gt;</code> element.</p>
+
+            <h2 class="mainh2">background-color</h2>
+            <p class="para">It allows you to specify a color for the background of the element.</p>
+            <p class="para">Here's the syntax for using the <span
+                class="highlight">background-color</span> property within the <span class="highlight">style</span> attribute:</p>
+                <div class="coderaper">
+                    <h3 class="Example">Example</h3>
+                    <div class="codebox">
+                        <textarea name="code" class="coode hight10" spellcheck="false">
+<h1 style="background-color:lightgreen;">This is a blue background.</h1>
+
+<p style="background-color:lightskyblue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, consequuntur mollitia quod quia officia perspiciatis dolore facere non corrupti est aspernatur ea qui. Consequuntur delectus vitae officiis voluptate fugit. At.</p>
+
+<button style="background-color:orangered;">button</button>
+                        </textarea>
+                        <button class="codebtn">see output</button>
+                        <iframe class="codeframe hight15"></iframe>
+                    </div>
+                </div>
+                <p class="para">You can use any valid CSS color value to customize the background color of HTML elements, allowing you to create visually appealing designs for your web page.</p>
+
+                <h2 class="mainh2">color</h2>
+                <p class="para">This is the CSS property you're setting to specify the text color for any HTML element</p>
+                <div class="coderaper">
+                    <h3 class="Example">Example</h3>
+                    <div class="codebox">
+                        <textarea name="code" class="coode hight10" spellcheck="false">
+<h1 style="background-color: lightgreen; color:tomato;">This is a blue background.</h1>
+
+<p style="background-color: lightskyblue; color:black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, consequuntur mollitia quod quia officia perspiciatis dolore facere non corrupti est aspernatur ea qui. Consequuntur delectus vitae officiis voluptate fugit. At.</p>
+                            
+<button style="background-color:orangered; color:whitesmoke;">button</button>
+                        </textarea>
+                        <button class="codebtn">see output</button>
+                        <iframe class="codeframe hight15"></iframe>
+                    </div>
+                </div>
+                <p class="para">You can use any valid CSS <span class="highlight">color</span> value to customize the text color of HTML elements, allowing you to style your text content to fit your design and visual preferences.</p>
+
+                <h2 class="mainh2">font-size</h2>
+                <p class="para">This is the CSS property you're setting to specify the font size.</p>
+                <p class="para">This is the value that defines the font size. You can specify the size using different units such as pixels <span class="highlight">px</span>, points <span class="highlight">rem</span>, em units <span class="highlight">em</span>, percentages <span class="highlight">%</span>, or other valid CSS size units.</p>
+                <div class="coderaper">
+                    <h3 class="Example">Example</h3>
+                    <div class="codebox">
+                        <textarea name="code" class="coode hight10" spellcheck="false">
+<h1 style="background-color: lightgreen; color:tomato; font-size:2.5rem;">This is a blue background.</h1>
+
+<p style="background-color: lightskyblue; color:black; font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, consequuntur mollitia quod quia officia perspiciatis dolore facere non corrupti est aspernatur ea qui. Consequuntur delectus vitae officiis voluptate fugit. At.</p>
+                            
+<button style="background-color:orangered; color:whitesmoke; font-size: 1.1em;">button</button>
+                        </textarea>
+                        <button class="codebtn">see output</button>
+                        <iframe class="codeframe hight15"></iframe>
+                    </div>
+                </div>
+                <p class="para">The <span class="highlight">font-size</span> property allows you to control the readability and appearance of text within your HTML elements by adjusting the size according to your design requirements.</p>
+
+                <h2 class="mainh2">font-family</h2>
+                <p class="para">It allows you to define the specific font or a list of fonts that should be used to render the text inside the element.</p>
+                <div class="coderaper">
+                    <h3 class="Example">Example</h3>
+                    <div class="codebox">
+                        <textarea name="code" class="coode hight15" spellcheck="false">
+<h1 style="background-color: lightgreen; color:tomato; font-size:2.5rem; font-family: Arial;">This is a blue background.</h1>
+
+<p style="background-color: lightskyblue; color:black; font-size: 20px; font-family: cursive;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, consequuntur mollitia quod quia officia perspiciatis dolore facere non corrupti est aspernatur ea qui. Consequuntur delectus vitae officiis voluptate fugit. At.</p>
+                                                        
+<button style="background-color:orangered; color:whitesmoke; font-size: 1.1em; font-family: monospace;" >button</button>
+                        </textarea>
+                        <button class="codebtn">see output</button>
+                        <iframe class="codeframe hight15"></iframe>
+                    </div>
+                </div>
+                <p class="para">You can use the <span class="highlight">font-family</span> property to specify various fonts and font stacks to control the appearance of text in your HTML elements, ensuring that your text looks consistent across different devices and platforms.</p>
+
+                <h2 class="mainh2">text-align</h2>
+                <p class="para">This is the CSS property you're setting to specify the text alignment.</p>
+                <p class="para"><span class="highlight bold">value</span>: This is the alignment value that you can set to one of the following options:</p>
+                <div class="listbox">
+                    <ol>
+                        <li><span class="listpointer">left</span>: Text is aligned to the left edge of the element.</li>
+                        <li><span class="listpointer">right</span>: Text is aligned to the right edge of the element.</li>
+                        <li><span class="listpointer">center</span>: Text is centered within the element.</li>
+                        <li><span class="listpointer">justify</span>: Text is justified, meaning it is stretched to fill the entire width of the element, aligning both the left and right edges.</li>
+                    </ol>
+                </div>
+                <div class="coderaper">
+                    <h3 class="Example">Example</h3>
+                    <div class="codebox">
+                        <textarea name="code" class="coode hight15" spellcheck="false">
+<h1 style="background-color: lightgreen; color:tomato; font-size:2.5rem; font-family: Arial; text-align: center;">This is a blue background.</h1>
+
+<p style="background-color: lightskyblue; color:black; font-size: 20px; font-family: cursive; text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, consequuntur mollitia quod quia officia perspiciatis dolore facere non corrupti est aspernatur ea qui. Consequuntur delectus vitae officiis voluptate fugit. At.</p>
+                                                        
+<button style="background-color:orangered; color:whitesmoke; font-size: 1.1em; font-family: monospace; text-align: center;" >button</button>
+                        </textarea>
+                        <button class="codebtn">see output</button>
+                        <iframe class="codeframe hight15"></iframe>
+                    </div>
+                </div>
+                <p class="para">You can use the <span class="highlight">text-align</span> property to control the alignment of text within various HTML elements,</p>
+                
+                <div class="inpro m4top">
+                <p class="para">It's important to note that using inline styles with style attributes can make your HTML code less maintainable, especially when applied to many elements. For larger and more organized projects, it's often recommended to use external or internal CSS stylesheets, which separate the styling from the content for better maintainability and reusability.</p>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="../JS/cHTML.js"></script>
+</html>

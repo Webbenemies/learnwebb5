@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/coursnav.css">
+    <link rel="stylesheet" href="../CSS/courscomponent.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../pho/webb logo.png">
+            <span>webb tool</span>
+        </div>
+
+        <div class="navbarbox" id="navbarbox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../CHTML/homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <div class="responnav" id="responnav">
+        <div class="resplinks">
+            <nav class="responav" id="responav">
+                <a href="../index.html">home</a>
+                <a href="./homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        
+        <div class="menubox" id="menubox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div id="sidenav" >
+            <div style="height: 1.5rem;"></div>  
+        </div>
+        <div id="maincon">
+            <h1 class="mainh1">time to uncover mystery of head element</h1>
+            <p class="para">
+                The <code>&lt;head&gt;</code> element in HTML is a container for metadata (data about data) and other head elements, such as <code>&lt;title&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;link&gt;</code>, <code>&lt;style&gt;</code>, <code>&lt;script&gt;</code>, and more. It is an essential part of the HTML document and is typically located between the opening <code>&lt;html&gt;</code> tag and the opening <code>&lt;body&gt;</code> tag.</p>
+
+                <div class="coderaper">
+                    <h3 class="Example">Example</h3>
+                    <div class="codebox">
+                        <textarea name="code" class="coode hight19" spellcheck="false"><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+                                
+</body>
+</html>
+                        </textarea>
+                    </div>
+                </div>
+
+                <p class="para">the <code>&lt;head&gt;</code> element plays a crucial role in providing information to browsers, search engines, and other tools that interpret and display web content. It helps define the document's structure, appearance, and behavior, contributing to a well-organized and functional web page.</p>
+                <h2 class="mainh2">Explanation of some common elements within the <code>&lt;head&gt;</code>:</h2>
+                <h3 class="introh3">title tag</h3>
+                <p class="para">The <code>&lt;title&gt;</code> element in the HTML <code>&lt;head&gt;</code> section is used to define the title of the HTML document. This title is what appears in the browser's title bar or tab. </p>
+                <p class="para bold"> the basic element we covered earlier </p>
+
+                <h3 class="introh3">link tag</h3>
+                <p class="para">The <code>&lt;link&gt;</code> element in the HTML <code>&lt;head&gt;</code> section is used to link external resources or documents to the HTML document.</p>
+                <p class="para"> the <code>&lt;link&gt;</code> element can be used for many purposes, such as linking to a favicon, link an external stylesheet (CSS), specifying the relationship between documents, or linking to alternative versions of the document. </p>
+                <p class="para bold">Here are a few additional examples:</p>
+                <div class="coderaper">
+                    <h3 class="Example">Example</h3>
+                    <div class="codebox">
+                        <textarea name="code" class="coode hight20" spellcheck="false">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- External Stylesheet: -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon Link: -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Alternate Stylesheet: -->
+    <link rel="stylesheet" href="dark-theme.css" title="Dark Theme">
+
+    <!-- Preconnect to a Server: -->
+    <link rel="preconnect" href="https://example.com">
+
+    <!-- Other head elements go here -->
+</head>
+<body>
+    <!-- Body content goes here -->
+</body>
+</html>
+                        </textarea>
+                    </div>
+                </div>
+
+                <h3 class="introh3">script tag</h3>
+                <p class="para highlight">&lt;script src="script.js" defer&gt; &lt;/script&gt;:</p>
+                <p class="para">Links an external JavaScript file (script.js) to the HTML document. The <span class="highlight">defer</span> attribute indicates that the script should be executed after the HTML document has been parsed.</p>
+
+                <h3 class="introh3">meta tags (Communication with Ground Control)</h3>
+                <p class="para">The various <code>&lt;meta&gt;</code> tags are like the communications sent back to ground control (search engines). They describe the mission (web page) and help search engines understand what's on board, improving the chances of being discovered in the vast space of the internet.</p>
+                <p class="para bold m3top">Here are some common types of metadata used in HTML:</p>
+                <div class="listbox">
+                    <ol>
+                        <li>Character Set (<code>&lt;meta charset&gt;</code>): Specifies the character encoding for the HTML document. UTF-8 is widely used to support a broad range of characters.</li>
+                        <div class="coderaper">
+                            <h3 class="Example">Example</h3>
+                            <div class="codebox">
+                                <textarea name="code" class="coode hight3" spellcheck="false">
+<meta charset="UTF-8">
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <li>Description (<code>&lt;meta description&gt;</code>): Provides a brief description of the content on the webpage. Search engines may use this information for indexing and displaying search results.</li>
+                        <div class="coderaper">
+                            <h3 class="Example">Example</h3>
+                            <div class="codebox">
+                                <textarea name="code" class="coode hight3" spellcheck="false">
+<meta name="description" content="This is a description of my webpage.">
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <li>Viewport Settings (<code>&lt;meta viewport&gt;</code>): Defines how the webpage should be displayed on different devices, helping to create a responsive design.</li>
+                        <div class="coderaper">
+                            <h3 class="Example">Example</h3>
+                            <div class="codebox">
+                                <textarea name="code" class="coode hight3" spellcheck="false">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                </textarea>
+                            </div>
+                        </div>
+                        <li>Refresh (<code>&lt;meta http-equiv="refresh"&gt;</code>):  Redirects or refreshes the page after a specified time.</li>
+                        <div class="coderaper">
+                            <h3 class="Example">Example</h3>
+                            <div class="codebox">
+                                <textarea name="code" class="coode hight3" spellcheck="false">
+<meta http-equiv="refresh" content="5;url=https://example.com">
+                                </textarea>
+                            </div>
+                        </div>
+                        <li>Keywords Metadata (<code>&lt;meta keywords&gt;</code>):  Historically used to specify keywords related to the content for search engines, but is not widely used anymore.</li>
+                        <div class="coderaper">
+                            <h3 class="Example">Example</h3>
+                            <div class="codebox">
+                                <textarea name="code" class="coode hight3" spellcheck="false">
+<meta name="keywords" content="keyword1, keyword2, keyword3">
+                                </textarea>
+                            </div>
+                        </div>
+                    </ol>
+                </div>
+                <p class="para">These are some of the common types of metadata used in HTML. Each type serves a specific purpose, contributing to the overall presentation, functionality, and search engine optimization of a webpage. Keep in mind that the importance and usage of some metadata elements may evolve over time based on web standards and best practices.</p>
+                <div class="inpro">
+                    <p class="para">The <code>&lt;head&gt;</code> is your web page's mission control, crucial for browsers and search engines. It sets the stage and ensures a smooth user journey. Without a well-prepared <code>&lt;head&gt;</code>, your page might face turbulence in the internet cosmos.</p>
+                </div>
+        </div>
+    </main>
+</body>
+<script src="../JS/cHTML.js"></script>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/coursnav.css">
+    <link rel="stylesheet" href="../CSS/courscomponent.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../pho/webb logo.png">
+            <span>webb tool</span>
+        </div>
+
+        <div class="navbarbox" id="navbarbox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../CHTML/homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <div class="responnav" id="responnav">
+        <div class="resplinks">
+            <nav class="responav" id="responav">
+                <a href="../index.html">home</a>
+                <a href="./homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        
+        <div class="menubox" id="menubox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div id="sidenav" >
+            <div style="height: 1.5rem;"></div>  
+        </div>
+        <div id="maincon">
+            <h1 class="mainh1">Dive into Cinematics with <code>&lt;video&gt;</code> Element</h1>
+            <p class="para m3top">The <code>&lt;video&gt;</code> element is used to embed video files in a web page. It
+                allows you to include video content and provides a standardized way to present videos on the web.
+            </p>
+            <p class="para"> The <code>&lt;video&gt;</code> element supports various video formats, and it includes
+                built-in controls for the user to play, pause, adjust volume, and perform other actions.</p>
+
+            <p class="para bold">Here is the basic syntax for the <code>&lt;video&gt;</code> element:</p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight3" spellcheck="false" readonly>
+<video src="macro.mp4" poster="poster.jpg" controls></video>
+</textarea>
+                    <video class="videxam" src="../vide/macro.mp4" poster="../pho/poster.png" controls></video>
+                    <p class="caption">Video by Danil_Shostak from Pixabay</p>
+                </div>
+            </div>
+            <p class="para m3top">Here are some common attributes associated with the <code>&lt;video&gt;</code>
+                element:</p>
+            <div class="listbox">
+                <ul>
+                    <li><span class="listpointer">src: </span>The src attribute is required and specifies the path or
+                        URL to the video file</li>
+                    <li><span class="listpointer">controls: </span>The <span class="highlight">controls</span> attribute
+                        adds playback controls to the video player, allowing users to play, pause, adjust volume, and
+                        more.</li>
+                    <div class="videos">
+                        <div class="vide">
+                            <div class="vi">
+                                <video class="contents" src="../vide/macro.mp4"></video>
+                                <p class="vip">Video by Danil_Shostak from Pixabay</p>
+                            </div>
+                            <p class="vidtop">without controls</p>
+                        </div>
+                        <div class="vide">
+                            <div class="vi">
+                                <video class="contents" src="../vide/macro.mp4" controls></video>
+                                <p class="vip">Video by Danil_Shostak from Pixabay</p>
+                            </div>
+                            <p class="vidtop">without controls</p>
+                        </div>
+                    </div>
+                    <li> <span class="listpointer">width and height: </span>These attributes control the dimensions of
+                        the video player. Similar to the <code>&lt;img&gt;</code> element, they allow you to set the
+                        width and height of the video display.</li>
+                    <li><span class="listpointer">autoplay: </span>The <span class="highlight">autoplay</span>
+                        attribute, when present, makes the video start playing automatically as soon as it is loaded.
+                        However, note that some browsers have restrictions on autoplay to prevent annoying user
+                        experiences, especially with sound.</li>
+                    <li><span class="listpointer">loop: </span>The <span class="highlight">loop</span> attribute, when
+                        present, causes the video to loop back to the beginning and restart when it reaches the end.
+                    </li>
+                    <div class="videos">
+                        <div class="vide">
+                            <div class="vi">
+                                <video class="contents" src="../vide/macro.mp4" controls></video>
+                                <p class="vip">Video by Danil_Shostak from Pixabay</p>
+                            </div>
+                            <p class="vidtop">without loop</p>
+                        </div>
+                        <div class="vide">
+                            <div class="vi">
+                                <video class="contents" src="../vide/macro.mp4" controls loop></video>
+                                <p class="vip">Video by Danil_Shostak from Pixabay</p>
+                            </div>
+                            <p class="vidtop">with loop</p>
+                        </div>
+                    </div>
+                    <li><span class="listpointer">muted: </span>The <span class="highlight">muted</span> attribute, when
+                        present, mutes the audio of the video by default. This is often used in combination with <span
+                            class="highlight">autoplay</span> to create a muted, autoplaying video.</li>
+                    <li><span class="listpointer">poster: </span>The <span class="highlight">poster</span> attribute
+                        specifies an image that is shown while the video is downloading, or until the user hits the play
+                        button. It is a good practice to provide a poster for better user experience.</li>
+
+                        <div class="coderaper">
+                            <h3 class="Example">Example</h3>
+                            <div class="codebox">
+                                <textarea name="code" class="coode hight5" spellcheck="false" readonly>
+<video src="video.mp4" controls></video>
+<video src="video.mp4" controls poster="poster.jpg"></video>
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="videos">
+                            <div class="vide">
+                                <div class="vi">
+                                    <video class="contents" src="../vide/macro.mp4" controls></video>
+                                    <p class="vip">Video by Danil_Shostak from Pixabay</p>
+                                </div>
+                                <p class="vidtop">without poster</p>
+                            </div>
+                            <div class="vide">
+                                <div class="vi">
+                                    <video class="contents" src="../vide/macro.mp4" controls poster="../pho/poster.png"></video>
+                                    <p class="vip">Video by Danil_Shostak from Pixabay</p>
+                                </div>
+                                <p class="vidtop">with poster</p>
+                            </div>
+                        </div>
+                </ul>
+            </div>
+            <p class="para">These attributes give you control over how videos are presented and played on your web
+                pages, providing an interactive and engaging multimedia experience for users.</p>
+            <h2 class="mainh2">fallback content</h2>
+            <p class="para">you can provide fallback content within the <code>&lt;video&gt;</code> element to be
+                displayed if the browser does not support the video tag or if none of the specified video formats can be
+                played. </p>
+            <p class="para">The fallback content is placed between the opening <code>&lt;video&gt;</code> tag and the
+                <code>&lt;source&gt;</code> elements.</p>
+            <p class="para">This content is shown to users who have browsers that do not support the
+                <code>&lt;video&gt;</code> tag or cannot play any of the specified video formats.
+            </p>
+            <p class="para bold">Here's an example of using fallback content in a <code>&lt;video&gt;</code> element:
+            </p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight5" spellcheck="false">
+<video controls width="400px">
+    <source src="../vide/macro.mp4" type="video/mp4">
+    <source src="../vide/macro.webm" type="video/webm">
+</video>                        
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe hight20"></iframe>
+                </div>
+            </div>
+            <p class="para">The <code>&lt;source&gt;</code> elements provide different video sources in different
+                formats, allowing browsers to choose the most suitable format based on compatibility.</p>
+            <p class="para">If the browser supports the <code>&lt;video&gt;</code> tag and can play one of the specified
+                video formats, it will use the video content. If not, it will display the fallback content.</p>
+            <p class="para">This practice ensures a better user experience, as users who cannot view the video will
+                still receive some information or alternative content. Additionally, you can style the fallback content
+                to make it visually appealing and informative.</p>
+            <p class="para m3top">The <code>&lt;video&gt;</code> element is a powerful tool for incorporating multimedia
+                content into web pages, providing a standardized and user-friendly way to present videos. It supports a
+                variety of video formats, making it versatile for different browsers and devices.</p>
+        </div>
+    </main>
+</body>
+<script src="../JS/cHTML.js"></script>
+
+</html>

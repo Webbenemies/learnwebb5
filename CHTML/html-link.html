@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/coursnav.css">
+    <link rel="stylesheet" href="../CSS/courscomponent.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../pho/webb logo.png">
+            <span>webb tool</span>
+        </div>
+
+        <div class="navbarbox" id="navbarbox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../CHTML/homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <div class="responnav" id="responnav">
+        <div class="resplinks">
+            <nav class="responav" id="responav">
+                <a href="../index.html">home</a>
+                <a href="./homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        
+        <div class="menubox" id="menubox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div id="sidenav" >
+            <div style="height: 1.5rem;"></div>  
+        </div>
+        <div id="maincon">
+            <h1 class="mainh1">Prepare for launch! <br> Let's dive into the world of HTML links</h1>
+            <p class="para m4top">An HTML link, also known as a hyperlink, is a fundamental element in web development that allows you to connect one web page to another or link to various resources, such as documents, images, videos, or even other websites.</p>
+            <p class="para">Links are what make the World Wide Web an interconnected network of information. They enable users to navigate between different web pages and explore content across the internet.</p>
+            <p class="para m3top">In HTML, links are created using the <code>&lt;a&gt;</code> (anchor) element. The primary attribute used with the <code>&lt;a&gt;</code> element is the <span class="highlight bold">href</span> (Hypertext Reference) attribute, which specifies the destination of the link.</p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight5" spellcheck="false">
+<a href="https://www.google.com">Go to Google</a>
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+            <p class="para">In this example, <span class="highlight">Visit Example.com</span> will be the clickable text, and when the user clicks it, they will be taken to the <span class="highlight">https://www.example.com</span> URL.</p>
+                        
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight5" spellcheck="false">
+<p>Create a text link to <a href="https://www.google.com">Go Google</a> </p>
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+
+            <h2 class="mainh2">types of HTML links</h2>
+            <p class="para">The <span class="highlight">href</span> attribute can point to various types of resources, each serving a different purpose and use case. Here are some common types of HTML links:</p>
+            <div class="listbox">
+                <ul>
+                    <li><span class="listpointer">Internal Links:</span></li>
+                    <ol>
+                        <li><span class="listpointer">Page-to-Page Links:</span> These links connect different pages within the same website. For example, linking from the homepage to an "About Us" page on the same site.</li>
+                        <div class="coderaper">
+                            <h3 class="Example">Example</h3>
+                            <div class="codebox">
+                                <textarea name="code" class="coode hight3" spellcheck="false">
+<a href="homehtml.html">HTML home</a>                                    
+                                </textarea>
+                                <button class="codebtn">see output</button>
+                                <iframe class="codeframe hight15"></iframe>
+                            </div>
+                        </div>
+                        <li><span class="listpointer">Same-Page Links:</span> These links allow users to jump to different sections of the same page. They use the <span class="highlight">#</span> symbol followed by an element's <span class="highlight">id</span> attribute.</li>
+                        <div class="coderaper">
+                            <h3 class="Example">Example</h3>
+                            <div class="codebox">
+                                <textarea name="code" class="coode hight15" spellcheck="false">
+<a href="#sec2">Jump to Section 2</a>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt eaque eum voluptatum! Culpa suscipit, quis quidem odio sequi temporibus provident, a doloribus beatae nulla repudiandae facere enim, cumque aliquid ipsum quaerat. Molestias recusandae similique libero, nihil eaque optio. Possimus dolorem velit perferendis voluptates architecto dignissimos vitae! Suscipit facilis officia voluptate ratione! Dignissimos facilis dolores aliquam, consectetur molestiae soluta pariatur incidunt velit ducimus consequatur consequuntur officiis aliquid porro beatae perspiciatis atque nulla saepe. Similique sint nam aliquid omnis laudantium cumque quis minus exercitationem itaque, porro recusandae natus vel consequuntur doloremque placeat, quasi debitis, ullam quibusdam iure animi ut illum rem pariatur?</p>
+
+<h2 id="sec2">Section 2 Content</h2>                                    
+                                </textarea>
+                            </div>
+                        </div>
+
+                    </ol>
+                    <li><span class="listpointer">External Links:</span></li>
+                    <ol>
+                        <li><span class="listpointer">Absolute URLs:</span> These links direct users to web pages on external websites using the full URL.
+                        </li>
+                        <div class="coderaper">
+                            <h3 class="Example">Example</h3>
+                            <div class="codebox">
+                                <textarea name="code" class="coode hight3" spellcheck="false">
+<a href="https://www.example.com">Visit Example.com</a>                                    
+                                </textarea>
+                                <button class="codebtn">see output</button>
+                                <iframe class="codeframe"></iframe>
+                            </div>
+                        </div>
+                        <li><span class="listpointer">Relative URLs:</span> Relative URLs specify links to resources or pages relative to the current page's location. This is commonly used for pages within the same website.
+                        </li>
+                    </ol>
+                    <li><span class="listpointer">Email Links and Telephone Links:</span></li>
+                    <ol>
+                        <li>You can create links that open the user's email client with a pre-filled email. Use the <span class="highlight">mailto:</span> protocol in the <span class="highlight">href</span> attribute</li>
+                        <li>Telephone links open the user's device's default phone application to make a call. Use the <span class="highlight">tel:</span> protocol in the <span class="highlight">href</span> attribute.</li>
+                        <div class="coderaper">
+                            <h3 class="Example">Example</h3>
+                            <div class="codebox">
+                                <textarea name="code" class="coode hight5" spellcheck="false">
+<a href="mailto:contact@example.com">Contact Us</a> <br>
+<a href="tel:+1234567890">Call Us</a>
+                                </textarea>
+                                <button class="codebtn">see output</button>
+                                <iframe class="codeframe"></iframe>
+                            </div>
+                        </div>
+                    </ol>
+                </ul>
+            </div>
+            <p class="para">Each type of link serves a specific purpose, and understanding when and how to use them is important for creating a seamless and user-friendly web experience.</p>
+
+            <h2 class="mainh2">anchor attributes</h2>
+            <p class="para">
+                In HTML, links created using the  <code>&lt;a&gt;</code> (anchor) element can be customized using various attributes to control their behavior and appearance. Here are some common HTML link attributes:
+            </p>
+            <p class="para m3top"><span class="highlight bold">target:</span> This attribute determines how the linked content is displayed. Common values include:</p>
+            <div class="listbox">
+                <ol>
+                    <li><span class="listpointer">_blank:</span> Opens the link in a new browser window or tab.</li>
+                    <li><span class="listpointer">_self:</span> Opens the link in the same window or frame (default).</li>
+                    <li><span class="listpointer">_parent:</span> Opens the link in the parent frame of a frame-based page.</li>
+                    <li><span class="listpointer">_top:</span> Opens the link in the full browser window, breaking out of frames.</li>
+                </ol>
+            </div>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight3" spellcheck="false">
+<a href="homehtml.html" target="_blank">Visit Example.com</a>
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+            <p class="para m3top">
+                <span class="highlight bold">rel (Relationship):</span> The <span class="highlight bold">rel</span> attribute specifies the relationship between the current document and the linked document. It's commonly used with the <span class="highlight bold">nofollow</span> value to indicate that search engines should not follow the link.
+            </p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight3" spellcheck="false">
+<a href="homehtml.html" rel="nofollow">Visit Example.com</a>
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+            <p class="para">you can choose the appropriate attributes to create the desired functionality for your links.</p>
+            <p class="para m3top">HTML links are a fundamental component of web navigation and user interaction. They are what make the internet an interconnected web of information, and they play a crucial role in guiding users through websites and online content. Anchor can be customized and styled to enhance the user experience and can also include various attributes to control their behavior, appearance, and accessibility.</p>
+        </div>
+    </main>
+</body>
+<script src="../JS/cHTML.js"></script>
+</html>

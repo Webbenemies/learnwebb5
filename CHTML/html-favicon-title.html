@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/coursnav.css">
+    <link rel="stylesheet" href="../CSS/courscomponent.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../pho/webb logo.png">
+            <span>webb tool</span>
+        </div>
+
+        <div class="navbarbox" id="navbarbox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../CHTML/homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <div class="responnav" id="responnav">
+        <div class="resplinks">
+            <nav class="responav" id="responav">
+                <a href="../index.html">home</a>
+                <a href="./homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        
+        <div class="menubox" id="menubox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div id="sidenav" >
+            <div style="height: 1.5rem;"></div>  
+        </div>
+        <div id="maincon">
+            <h1 class="mainh1">page title and favicon</h1>
+            <p class="para">HTML Favicon and Page Title are two distinct elements used in a web page to provide information and visual representation.</p>
+            <!-- img -->
+            <p class="para">Combining both the page title and favicon helps create a more professional and visually appealing web page that is easily recognizable and navigable by users.</p>
+
+            <h2 class="mainh2">HTML Page Title</h2>
+            <div class="listbox">
+                <ul>
+                    <li>The page title is specified within the <code>&lt;title&gt;</code> element in the <code>&lt;head&gt;</code> section of an HTML document.</li>
+                    <li>It represents the title or name of the web page and is displayed in the browser's title bar or tab.</li>
+                    <li>The page title is used by search engines, social media platforms, and when bookmarking to display the title of the page.</li>
+                    <li>It's essential for providing context and helping users understand the content of the web page.</li>
+
+                </ul>
+            </div>
+            <p class="para">To include a title in your HTML document, you use the following code within the <code>&lt;head&gt;</code> section:</p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight10" spellcheck="false" readonly>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+    <p>Your web page content goes here</p>
+</body>
+</html>
+                    </textarea>
+                </div>
+            </div>
+            <p class="para highlight bold">
+                Always include the <code>&lt;title&gt;</code> element in your HTML code. It's a must-have!</p>
+            <p class="para">the HTML page title is a fundamental element of web design and development that has a direct impact on user engagement, SEO, and overall user experience. A well-optimized and descriptive title can help attract and retain users, while a poorly chosen title can have the opposite effect. It's a critical part of web page design and should be carefully considered when creating or maintaining a website.</p>
+
+            <h2 class="mainh2">HTML Favicon</h2>
+            <div class="listbox">
+                <ul>
+                    <li>A favicon, short for "favorite icon," is a small image or icon that represents a website or web page.</li>
+                    <li>It is typically displayed in the browser's address bar, tabs, bookmarks, and other places where the website's identity needs to be visually represented.</li>
+                    <li>Favicons enhance branding and make it easier for users to identify and distinguish between different websites.</li>
+                </ul>
+            </div>
+            <p class="para">To include a favicon in your HTML document, you use the following code within the <code>&lt;head&gt;</code> section:</p>
+
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight10" spellcheck="false" readonly>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <p>Your web page content goes here</p>
+</body>
+</html>
+                    </textarea>
+                </div>
+            </div>
+            <p class="para">Use the HTML <code>&lt;link&gt;</code> element to insert a favicon</p>
+            <p class="para">In this example, replace <span class="highlight bold">"favicon.png"</span> with the path to your favicon image file. The <span class="highlight bold">"type"</span> attribute specifies the file format of the favicon, which is typically <span class="highlight bold">"image/png"</span> or <span class="highlight bold">"image/x-icon"</span> for ICO files. You can also use other image formats like .jpg or .gif, but .png and .ico are the most common.</p>
+
+            <p class="para m4top" >HTML page titles and favicons are crucial elements in web development that engage users, improve SEO, guide visitors, reinforce branding, and enhance the overall user experience.</p>
+        </div>
+    </main>
+</body>
+<script src="../JS/cHTML.js"></script>
+</html>

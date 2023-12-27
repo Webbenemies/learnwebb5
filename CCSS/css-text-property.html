@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/coursnav.css">
+    <link rel="stylesheet" href="../CSS/courscomponent.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../pho/webb logo.png">
+            <span>webb orbit</span>
+        </div>
+        <div class="links">
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../CHTML/homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <div id="sidenav"></div>
+        <div id="maincon">
+            <h1 class="mainh1">the art of styling text</h1>
+            <p class="para">In today's lesson, we delved into the diverse world of CSS text properties, gaining valuable insights into how we can manipulate and enhance the presentation of text on webpages. CSS, provides a comprehensive set of tools for styling text, allowing us to control its appearance, size, font, alignment, and much more. By understanding and utilizing properties such as text-decoration, white-space, color, text-align, and others, </p>
+            <p class="para">As we continue our exploration of web development, these CSS text properties will undoubtedly prove to be indispensable in crafting aesthetically pleasing and well-designed websites.</p>
+            <h2 class="mainh2">color Property</h2>
+            <p class="para">The color property is used to set the color of the text within an element. You can specify colors using various formats such as named colors, hexadecimal values, RGB values, or HSL values.</p>
+
+            <div class="csseditor">
+                <div class="writecode">
+                    <textarea  class="codearea" spellcheck="false" name="csseditor">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>text color</title>
+</head>
+<body>
+<h1>Color Property</h1>
+
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.    Ipsum mollitia eveniet qui iusto inventore, voluptate, voluptas fugiat pariatur, quod odio quam! Dolorum tenetur voluptatem consequuntur?</p>
+</body>
+</html>
+                    </textarea>
+                    <textarea  class="codearea" spellcheck="false" name="csseditor">
+body{
+    background-color: black;
+}
+h1{
+    color: aqua;
+}
+p{
+    color: white;
+}
+                    </textarea>
+                </div>
+                <div class="showcode">
+                    <iframe class="codeoutput" frameborder="0"></iframe>
+                </div>
+            </div>
+
+            <h2 class="mainh2">text-align and text-justify</h2>
+            <p class="para">The <span class="highlight">text-align</span> property and the <span class="highlight">text-justify</span> property in CSS are related but serve different purposes when it comes to controlling the alignment and justification of text within an element.</p>
+            <p class="para m3top">The <code>text-align</code> property is used to set the horizontal alignment of text within an element. It can take values like <code>start,</code> <code>end,</code> <code>left,</code> <code>right,</code> <code>center,</code> <code>justify,</code> <code>match-parent.</code> Here's an example:</p>
+
+            <div class="csseditor">
+                <div class="writecode">
+                    <textarea  class="codearea" spellcheck="false" name="csseditor">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>text-align and text-justify</title>
+</head>
+<body>
+<h1>Text-Align</h1>
+<p>
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae iure nemo voluptas maxime eius, obcaecati earum, esse atque molestias optio quasi odio blanditiis exercitationem architecto esse atque molestias.
+</p>
+</body>
+</html>
+                    </textarea>
+                    <textarea  class="codearea" spellcheck="false" name="csseditor">
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: justify
+}
+                    </textarea>
+                </div>
+                <div class="showcode">
+                    <iframe class="codeoutput" frameborder="0"></iframe>
+                </div>
+            </div>
+            <p class="para m3top">The <span class="highlight">text-justify</span> property is used to control the justification method used when text is distributed across multiple lines. It can take values like <code>auto | inter-character | inter-word | none.</code> This property is typically used in conjunction with <code>text-align: justify</code>. Here's an example:</p>
+
+            <div class="csseditor">
+                <div class="writecode">
+                    <textarea  class="codearea" spellcheck="false" name="csseditor">
+<div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sunt recusandae, laudantium quidem et, itaque animi impedit omnis, libero autem non maxime consequatur. Necessitatibus minus voluptatem veniam tenetur doloremque maxime, facilis numquam? Dolor repellat ducimus dolores odio unde nesciunt nulla?</p>
+</div>
+                    </textarea>
+                    <textarea  class="codearea" spellcheck="false" name="csseditor">
+div {
+    text-align: center;
+    text-justify: inter-word;
+}                 
+                    </textarea>
+                </div>
+                <div class="showcode">
+                    <iframe class="codeoutput" frameborder="0"></iframe>
+                </div>
+            </div>
+            <p class="para">In this example, text is aligned to the center, and inter-word justification is applied, meaning that spaces between words will be adjusted to create a visually balanced appearance.</p>
+
+            <h2 class="mainh2">text transform</h2>
+            <p class="para">
+                The <span class="highlight">text-transform</span> property in CSS is used to control the capitalization of text within an element. It allows you to transform the text to appear in uppercase, lowercase, or capitalize the first character of each word. Here are the three possible values for the <span class="highlight">text-transform</span> property:</p>
+                <div class="listbox">
+                    <ul>
+                        <li><span class="listpointer">uppercase: </span>Transforms all text to uppercase.</li>
+                        <li><span class="listpointer">lowercase: </span>Transforms all text to lowercase.</li>
+                        <li><span class="listpointer">capitalize: </span>Capitalizes the first character of each word.</li>
+                    </ul>
+                </div>
+                <p class="para">Here's an example illustrating the use of <span class="highlight">text-transform</span></p>
+
+                <div class="csseditor">
+                    <div class="writecode">
+                        <textarea  class="codearea" spellcheck="false" name="csseditor">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Text Transform</title>
+</head>
+<body>
+                        
+    <h3 class="uppercase">Text transformed to uppercase</h3>
+    <h3 class="lowercase">Text transformed to lowercase</h3>
+    <h3 class="capitalize">Text transformed to capitalize</h3>
+
+</body>
+</html>   
+                        </textarea>
+                        <textarea  class="codearea" spellcheck="false" name="csseditor">
+.uppercase{
+    text-transform: uppercase;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+                        </textarea>
+                    </div>
+                    <div class="showcode">
+                        <iframe class="codeoutput" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <p class="para">This property is particularly useful when you want to control the appearance of text without altering the actual content. It's commonly used in headings, buttons, or other elements to achieve a consistent and stylized presentation.</p>
+
+                <h2 class="mainh2">text decoration</h2>
+                <p class="para">The <span class="highlight">text-decoration</span> property in CSS is used to set or remove decorations on text. It can be applied to <span class="highlight">underline,</span> <span class="highlight">overline,</span> <span class="highlight">line-through,</span> or <span class="highlight">none,</span> to remove any decoration. </p>
+                <p class="para"> It can take values like: </p>
+                <div class="listbox">
+                    <ul>
+                        <li><span class="listpointer">solid: </span>Produces a solid line.</li>
+                        <li><span class="listpointer">dashed: </span>Produces a dashed line style.</li>
+                        <li><span class="listpointer">dotted: </span>Produces a dotted line.</li>
+                        <li><span class="listpointer">overline: </span>Each line of text has a line above it.</li>
+                        <li><span class="listpointer">line-through: </span>Each line of text has a line through the middle.</li>
+                        <li><span class="listpointer">double: </span>Produces a double line.</li>
+                        <li><span class="listpointer">underline: </span>Each line of text is underlined.</li>
+                        <li><span class="listpointer">none: </span>Produces no line.</li>
+                    </ul>
+                </div>
+                <p class="para bold">Here are some examples:</p>
+
+                <div class="csseditor">
+                    <div class="writecode">
+                        <textarea  class="codearea" spellcheck="false" name="csseditor">
+<h1>text decoration</h1>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum possimus dolore dolorum ipsam placeat laudantium consectetur perferendis molestias esse saepe? Enim velit laborum quis beatae!</p>
+
+<a href="">link</a>                     
+                        </textarea>
+                        <textarea  class="codearea" spellcheck="false" name="csseditor">
+h1 {
+    text-decoration: overline;
+}
+
+p{
+    text-decoration: line-through;
+}
+
+a{
+    text-decoration: none;
+}
+                                                 
+                        </textarea>
+                    </div>
+                    <div class="showcode">
+                        <iframe class="codeoutput" frameborder="0"></iframe>
+                    </div>
+                </div>
+<p class="para">This property is commonly used in styling links (<code>&lt;a&gt;</code> elements) to indicate that they are clickable, but it can be applied to various elements to achieve specific visual effects or to remove decorations as needed.</p>
+
+<h2 class="mainh2">letter-spacing, word-spacing and white-space</h2>
+<p class="para">Let's explore the letter-spacing, word-spacing, and white-space properties in CSS:</p>
+
+<h3 class="introh3 m3top">letter-spacing Property</h3>
+<p class="para">The <span class="highlight">letter-spacing</span> property is used to control the spacing between characters in a block of text. It can take values in various units like <span class="highlight">pixels,</span> <span class="highlight">em,</span> or <span class="highlight">percentage.</span></p>
+
+<div class="csseditor">
+    <div class="writecode">
+        <textarea  class="codearea" spellcheck="false" name="csseditor">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dignissimos odit repellendus deserunt eaque, voluptatem sapiente, eum enim corrupti quas voluptatum suscipit? Minus, dicta ducimus.</p>            
+
+<p class="space" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dignissimos odit repellendus deserunt eaque, voluptatem sapiente, eum enim corrupti quas voluptatum suscipit? Minus, dicta ducimus.</p>            
+        </textarea>
+        <textarea  class="codearea" spellcheck="false" name="csseditor">
+.space{
+    letter-spacing: 2px;
+}
+        </textarea>
+    </div>
+    <div class="showcode">
+        <iframe class="codeoutput" frameborder="0"></iframe>
+    </div>
+</div>
+
+<h3 class="introh3 m3top">word spacing Property</h3>
+<p class="para">The <span class="highlight">word-spacing</span> property is used to control the spacing between words in a block of text. Like <span class="highlight">letter-spacing</span>, it can take values in different units.</p>
+
+<div class="csseditor">
+    <div class="writecode">
+        <textarea  class="codearea" spellcheck="false" name="csseditor">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dignissimos odit repellendus deserunt eaque, voluptatem sapiente, eum enim corrupti quas voluptatum suscipit? Minus, dicta ducimus.</p>            
+
+<p class="space" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dignissimos odit repellendus deserunt eaque, voluptatem sapiente, eum enim corrupti quas voluptatum suscipit? Minus, dicta ducimus.</p>            
+        </textarea>
+        <textarea  class="codearea" spellcheck="false" name="csseditor">
+.space{
+    word-spacing: 4px;
+}
+        </textarea>
+    </div>
+    <div class="showcode">
+        <iframe class="codeoutput" frameborder="0"></iframe>
+    </div>
+</div>
+
+<h3 class="introh3 m3top">white space Property</h3>
+<p class="para">The <span class="highlight">white-space</span> property is used to control how white space within an element is handled. It can be especially useful when dealing with text formatting and preventing unwanted line breaks.</p>
+
+normal | pre | nowrap | pre-wrap | pre-line | break-spaces 
+
+<p class="para">These properties provide fine-grained control over the spacing and layout of text within HTML elements. You can experiment with these properties to achieve the desired visual effects in your web design.</p>
+
+
+<h2 class="mainh2">text shadow</h2>
+<p class="para">The <span class="highlight">text-shadow</span> property in CSS is used to apply shadows to text. It adds a shadow effect to the text, enhancing its visibility and creating a visual impact.</p>
+<p class="para bold">The text-shadow property takes three values</p>
+<p class="para">Here's the basic syntax:</p>
+
+<div class="syntax">
+    <pre>
+        selector {
+
+            text-shadow: horizontal-offset vertical-offset blur-radius color;
+
+          }
+          
+    </pre>
+</div>
+
+<div class="csseditor">
+    <div class="writecode">
+        <textarea  class="codearea" spellcheck="false" name="csseditor">
+<h1>The text-shadow property</h1>
+        </textarea>
+        <textarea  class="codearea" spellcheck="false" name="csseditor">
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+        </textarea>
+    </div>
+    <div class="showcode">
+        <iframe class="codeoutput" frameborder="0"></iframe>
+    </div>
+</div>
+<p class="para bold">In this example</p>
+<div class="listbox">
+    <ul>
+        <li><span class="listpointer">2px</span> is the horizontal offset.</li>
+        <li><span class="listpointer">2px</span> is the vertical offset.</li>
+        <li><span class="listpointer">4px</span> is the blur radius (creating a slightly blurred shadow).</li>
+        <li><span class="listpointer">rgba(0, 0, 0, 0.5)</span> is the color of the shadow, where rgba stands for red, green, blue, and alpha (opacity). The color is black (0, 0, 0) with an alpha value of 0.5 for some transparency.</li>
+    </ul>
+</div>
+<p class="para">You can adjust these values based on your design preferences. Experiment with different shadow colors, offsets, and blur radii to achieve the desired visual effect for your text.</p>
+        </div>
+    </main>
+</body>
+<script src="../JS/cCSS.js"></script>
+</html>

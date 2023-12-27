@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/coursnav.css">
+    <link rel="stylesheet" href="../CSS/courscomponent.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../pho/webb logo.png">
+            <span>webb tool</span>
+        </div>
+
+        <div class="navbarbox" id="navbarbox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../CHTML/homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <div class="responnav" id="responnav">
+        <div class="resplinks">
+            <nav class="responav" id="responav">
+                <a href="../index.html">home</a>
+                <a href="./homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        
+        <div class="menubox" id="menubox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div id="sidenav" >
+            <div style="height: 1.5rem;"></div>  
+        </div>
+        <div id="maincon">
+            <h1 class="mainh1">Mastering HTML Forms</h1>
+            <p class="para">form elements are a set of tags and attributes used to create interactive forms on web
+                pages. Forms allow users to input data and submit it to a server for processing. Form elements
+                facilitate the collection of various types of user input, such as text, checkboxes, radio buttons, and
+                more.</p>
+            <p class="para"> In addition to the basic elements we covered earlier, there are several other form elements
+                that offer more specialized functionality.</p>
+            <h2 class="mainh2">what is input elements</h2>
+            <p class="para">
+                The <code>&lt;input&gt;</code> element in HTML is a versatile and fundamental form element used to
+                collect user input. It can create various types of form controls, depending on the value of its <span
+                    class="highlight bold">type</span> attribute. </p>
+            <p class="para bold">Here are some common uses of the <code>&lt;input&gt;</code> element:</p>
+            <div class="listbox">
+                <ol>
+                    <li>Text Input:</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<input type="text" name="username" placeholder="Enter your username"></textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+                    <li>Password Input:</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<input type="password" name="password" placeholder="Enter your password">
+                                </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+
+                    <li>Checkbox:</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<p> <input type="checkbox" name="subscribe" value="yes"> Subscribe </p>
+<p> <input type="checkbox" name="subscribe" value="yes"> Subscribe </p>
+</textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+                    <li>Radio Buttons:</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<p> <input type="radio" name="gender" value="male"> Male </p>
+
+<p> <input type="radio" name="gender" value="female"> Female </p>
+</textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+                    <li>File Input (for file uploads):</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<input type="file" name="file_upload">
+                                </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+                    <li>Email Input:</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<input type="email" name="user_email" placeholder="Enter your email">
+                                </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+                </ol>
+            </div>
+            <p class="para">These are just a few examples. The <span class="highlight bold">type</span> attribute of the
+                <code>&lt;input&gt;</code> element determines its functionality and appearance. Each type is designed
+                for a specific kind of user input, such as text, checkboxes, radio buttons, and more.
+            </p>
+            <p class="para">The <span class="highlight bold">name</span> attribute is used to identify the input when
+                the form is submitted, and the <span class="highlight bold">value</span> attribute specifies the initial
+                value of the input in many cases. The <code>&lt;input&gt;</code> element is a crucial building block for
+                creating interactive forms on websites.</p>
+
+            <h2 class="mainh2">input attributes</h2>
+            <p class="para">
+                The <code>&lt;input&gt;</code> element in HTML has various attributes that can be used to customize its
+                behavior and appearance. Here are some common attributes associated with the <code>&lt;input&gt;</code>
+                element:</p>
+            <div class="listbox">
+                <ol>
+
+                    <li><span class="listpointer">type: </span>Specifies the type of input control. Common values
+                        include "text," "password," "checkbox," "radio," "submit," "reset," "file," "number," and more.
+                    </li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+ <input type="text" name="username" placeholder="username"> <br>
+ <input type="number" name="number" placeholder="enter number"> <br>
+ <input type="date" name="datetime">
+                                    </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+
+                    <li><span class="listpointer">placeholder: </span>Provides a short hint that describes the expected
+                        value of the input field. It is displayed in the input field before the user enters a value.
+                    </li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<input type="text" placeholder="Enter your username" name="username">
+                                    </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+
+                    <li><span class="listpointer">disabled: </span>Disables the input field, preventing the user from
+                        interacting with it or entering data.</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<input type="text" name="username" placeholder="disabled" disabled >
+                                    </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+
+                    <li><span class="listpointer">readonly: </span>Makes the input field read-only, allowing the user to
+                        see the value but not modify it.</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<input type="text" name="username" value="JohnDoe" readonly>
+                                    </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+
+                    <li><span class="listpointer">required: </span>Indicates that the user must fill in the input field
+                        before submitting the form.</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<input type="text" name="username" required>
+<input type="password" name="username" required>
+<input type="submit" value="submit">
+                                    </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+
+                    <li><span class="listpointer">multiple: </span>For <span class="highlight">type="file"</span>,
+                        allows the selection of multiple files.</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<input type="file" name="files" multiple>
+                                    </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+
+                    <li><span class="listpointer">step: </span>For <span class="highlight">type="number"</span>,
+                        specifies the legal number intervals.</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<input type="number" name="quantity" step="2">
+                                    </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+                    <li><span class="listpointer">name: </span>Assigns a name to the input field, which is used to
+                        identify the data when the form is submitted.</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<input type="text" name="username">
+                                    </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+                    <li><span class="listpointer">value: </span>Sets the initial value for an input field. For
+                        checkboxes and radio buttons, it represents the value to be sent to the server if the checkbox
+                        or radio button is checked.</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<p> <input type="checkbox" name="subscribe" value="yes"> Subscribe </p>
+
+<input type="button" value="click me">
+
+                                    </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+                    <li><span class="listpointer">step: </span>For <span class="highlight">type="number"</span>,
+                        specifies the legal number intervals.</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<input type="number" name="quantity" step="2">
+                                    </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+                    <li><span class="listpointer">size: </span> Defines the width of a text input field, typically in
+                        characters.</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false"><input type="text" name="username" size="40">
+                                    </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+
+                </ol>
+            </div>
+            <p class="para">These attributes provide developers with control and customization options when using the
+                <code>&lt;input&gt;</code> element in HTML forms. The specific attributes to use depend on the type of
+                input and the desired behavior.
+            </p>
+
+            <h2 class="mainh2">what is label</h2>
+            <p class="para">The <code>&lt;label&gt;</code> element in HTML is used to associate a text label with a form
+                control. This association is typically achieved by using the <span class="highlight">for</span>
+                attribute on the <code>&lt;label&gt;</code> element and setting its value to the <span
+                    class="highlight">id</span> of the corresponding form control. This improves accessibility and
+                usability, making it easier for users to understand the purpose of each form element. Here's an example
+                of how to use the <code>&lt;label&gt;</code> element:</p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight10" spellcheck="false">
+    <form action="/submit_form" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+            <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+    </form>
+                        </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+            <p class="para">In this example:</p>
+            <div class="listbox">
+                <ol>
+                    <li>Each <code>&lt;label&gt;</code> is associated with an <code>&lt;input&gt;</code> element by
+                        using the <span class="highlight">for</span> attribute and setting its value to the <span
+                            class="highlight">id</span> of the corresponding input field.</li>
+                    <li>The <span class="highlight">id</span> attribute on the <code>&lt;input&gt;</code> elements
+                        provides a unique identifier for each form control.</li>
+                    <li>Users can click on the labels, and it will focus or activate the associated form control, making
+                        it more user-friendly.</li>
+                </ol>
+            </div>
+            <p class="para">Using the <code>&lt;label&gt;</code> element in this way is especially important for
+                accessibility. Screen readers, for example, can use these associations to provide more meaningful
+                information to users with visual impairments.</p>
+            <p class="para m3top">
+                If you prefer a more concise and visually integrated approach, you can wrap the form control inside the
+                <code>&lt;label&gt;</code> element without explicitly setting the <span class="highlight">for</span>
+                attribute:
+            </p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight10" spellcheck="false">
+    <form action="/submit_form" method="post">
+        <label>Username: <input type="text" name="username"></label>
+            <br>
+        <label>Password: <input type="password" name="password"></label>
+    </form>
+                            </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+            <p class="para">In this case, the association between the <code>&lt;label&gt;</code> and the
+                <code>&lt;input&gt;</code> is implied by the structure of the HTML. This approach is shorter but
+                achieves the same result. Choose the method that best fits your preference and coding style.</p>
+
+        </div>
+
+    </main>
+</body>
+<script src="../JS/cHTML.js"></script>
+
+</html>

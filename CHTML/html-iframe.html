@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/coursnav.css">
+    <link rel="stylesheet" href="../CSS/courscomponent.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../pho/webb logo.png">
+            <span>webb tool</span>
+        </div>
+
+        <div class="navbarbox" id="navbarbox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../CHTML/homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <div class="responnav" id="responnav">
+        <div class="resplinks">
+            <nav class="responav" id="responav">
+                <a href="../index.html">home</a>
+                <a href="./homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        
+        <div class="menubox" id="menubox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div id="sidenav" >
+            <div style="height: 1.5rem;"></div>  
+        </div>
+        <div id="maincon">
+            <h1 class="mainh1">Engage with External Realms using iframe</h1>
+
+            <div class="frembox">
+            <iframe class="ifram" src="./homehtml.html" ></iframe>
+        </div>
+        <p class="para">An HTML iframe is used to display a web page within a web page.</p>
+            
+            <p class="para">The <code>&lt;iframe&gt;</code> element is used to embed an external document or web page within the current HTML document. It stands for "inline frame." The <code>&lt;iframe&gt;</code> element allows you to include content from another source, such as a different website, into your webpage. </p>
+            <h2 class="mainh2">some key attributes associated with the <code>&lt;iframe&gt;</code> element:</h2>
+            <p class="para bold highlight m2top">src :</p>
+            <p class="para">This attribute is required and specifies the source URL of the content to be embedded. It can be a relative or absolute URL.</p>
+            <p class="para bold highlight m2top">width and height :</p>
+            <p class="para">These attributes specify the width and height of the iframe. They allow you to control the dimensions of the embedded content.</p>
+            <p class="para bold highlight m2top">frameborder :</p>
+            <p class="para">The <span class="highlight">frameborder</span> attribute determines whether or not the iframe should have a border. A value of "0" means no border, and "1" means a border should be displayed.</p>
+            <p class="para bold highlight m2top">allowfullscreen :</p>
+            <p class="para">The <span class="highlight">allowfullscreen</span> attribute, when present, allows the iframe's content to be displayed in fullscreen mode. This is often used for embedding videos from platforms like YouTube.</p>
+            <p class="para bold highlight m2top">name :</p>
+            <p class="para">The <span class="highlight">name</span> attribute gives the iframe a name, allowing it to be the target of links or form submissions.</p>
+            <p class="para">These attributes give you control over the appearance and behavior of the iframe, allowing you to seamlessly integrate content from external sources into your web page. It's important to use iframes responsibly, considering security implications and ensuring a good user experience.
+            </p>
+            
+            <div class="frembox">
+                <iframe src="https://www.youtube-nocookie.com/embed/WsNxXQ3w9yI?si=2sYrXFCLrFLwaexf" class="iframes"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31793745.909153603!2d-73.22512794383547!3d-13.407837803363588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c59c7ebcc28cf%3A0x295a1506f2293e63!2sBrazil!5e0!3m2!1sen!2sin!4v1700273997744!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iframes"></iframe>
+            </div>
+
+
+
+                <p class="para">The content inside the <code>&lt;iframe&gt;</code> can be anything that a regular HTML document can contain, including text, images, forms, and more. This feature is often used to embed external content like maps, videos, or other webpages seamlessly into a website.</p>
+        <div class="inpro m3top">
+            <p class="para">Congratulations, Agent! You've successfully navigated the HTML media landscape. With these powerful elements, you can now create web pages that not only convey information but also captivate and engage users through a multimedia experience. Mission accomplished!</p>
+        </div>
+        </div>
+    </main>
+</body>
+<script src="../JS/cHTML.js"></script>
+</html>

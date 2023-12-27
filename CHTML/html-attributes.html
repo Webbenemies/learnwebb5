@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Attributes</title>
+    <link rel="stylesheet" href="../CSS/coursnav.css">
+    <link rel="stylesheet" href="../CSS/courscomponent.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../pho/webb logo.png">
+            <span>webb tool</span>
+        </div>
+
+        <div class="navbarbox" id="navbarbox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../CHTML/homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <div class="responnav" id="responnav">
+        <div class="resplinks">
+            <nav class="responav" id="responav">
+                <a href="../index.html">home</a>
+                <a href="./homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        
+        <div class="menubox" id="menubox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div id="sidenav" >
+            <div style="height: 1.5rem;"></div>  
+        </div>
+        <div id="maincon">
+            <h1 class="mainh1">HTML Attributes</h1>
+            <p class="para">HTML attributes are extra information that can be added to HTML elements to provide additional properties or characteristics to those elements.</p>
+            <p class="para">They are used to modify the behavior or appearance of an element on a web page.</p>
+            <p class="para m3top">Just as astronauts customize their suits and spacecraft, HTML elements can be customized using attributes.</p>
+            <p class="para">Imagine your rocket's attributes as a set of control panels or buttons, each responsible for a different function. These control panels give your rocket specific powers.</p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight8" readonly spellcheck="false"> 
+<rocket speed="20,000 mph" destination="Saturn">
+    <!-- Content goes here -->
+</rocket>
+                    </textarea>
+                </div>
+            </div>
+            <p class="para">In this scenario, "speed" and "destination" are like control panels, and they give your rocket the ability to travel at 20,000 mph to Sqaturn.</p>
+            <p class="para">So, think of HTML attributes as the supercharged features that turn your ordinary rocket (HTML element) into a powerful spacecraft (web page). With attributes, your web development journey becomes as exciting as an interstellar adventure!</p>
+            <h2 class="mainh2 m3top">To write HTML attributes, follow these general rules:</h2>
+
+            <div class="photobox">
+                <img src="../pho/atribute.png" class="photo">
+                <p class="photop">syntax for adding attributes to an html element</p>
+            </div>
+            <p class="para m3top"> To add attributes to an element, insert them inside the opening tag after the element name. Attributes are written in <span class="highlight bold">name-value pairs,</span> separated by an equals sign (<span class="highlight bold">=</span>) and enclosed in double or single quotes.</p>
+            <p class="para">For example, let's say you want to create a link <code>&lt;a&gt;</code> with the <span class="highlight bold">href</span> attribute to specify the link destination:</p>
+
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight5" spellcheck="false">
+<a href="https://www.example.com">Visit Example</a>                      
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+            <p class="para">In this example, <span class="highlight bold">href</span> is the attribute, and <span class="highlight bold">https://www.example.com</span> is its value.</p>
+            <p class="para m3top"> You can add multiple attributes to a single element by separating them with a space.</p>
+            <p class="para highlight bold">Here's an example with multiple attributes:</p>
+
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight5" spellcheck="false">
+<img src="https://cdn.pixabay.com/photo/2023/10/21/19/11/ai-generated-8332249_1280.png" alt="A beautiful sunset" width="200" height="200">                   
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+            <p class="para">In this example, the <code>&lt;img&gt;</code> element has several attributes: <span class="highlight ">src</span>, <span class="highlight">alt</span>, <span class="highlight">width</span>, and <span class="highlight">hight</span>, each with its own value.</p>
+            <div class="inpro">
+                <p class="para">Remember that different HTML elements support different attributes, so it's essential to refer to the documentation or resources specific to the element you're using to determine which attributes are applicable and how to use them.</p>
+            </div>
+            <h2 class="mainh2">Here's a simple example:</h2>
+            <p class="para m4top"><span class="bold highlight">src</span>: Used in elements like <code>&lt;img&gt;</code>, <code>&lt;script&gt;</code>, and <code>&lt;iframe&gt;</code> to specify the source (URL or file path).</p>
+
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight5" spellcheck="false">
+<img src="https://cdn.pixabay.com/photo/2023/10/21/19/11/ai-generated-8332249_1280.png">
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+            <p class="para m4top">
+                <span class="highlight bold">alt</span>: Used in  <code>&lt;img&gt;</code> elements to provide alternative text that is displayed if the image can't be loaded or for accessibility.
+            </p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight5" spellcheck="false">
+<img src="image.jpg" alt="A beautiful sunset">
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+            <p class="para m4top"><span class="highlight bold">width</span> and <span class="highlight bold">hight</span>: Used in <code>&lt;img&gt;</code> elements to set the width and height of the image, helping with layout and page loading.</p>
+
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight5" spellcheck="false">
+<img src="https://cdn.pixabay.com/photo/2023/10/21/19/11/ai-generated-8332249_1280.png" width="200" height="auto" alt="A resized image">`
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+            <p class="para m4top"><span class="bold highlight">href</span>: Used in anchor elements <code>&lt;a&gt;</code>  to specify the URL of the linked resource.</p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight5" spellcheck="false">
+<a href="https://www.example.com">Visit Example</a>
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+            <p class="para m4top"><span class="highlight bold">target</span>: Used in anchor elements to specify where the linked content should be displayed, such as in a new tab or window.</p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight5" spellcheck="false">
+<a href="https://www.example.com" target="_blank">Visit Example</a>
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+            <p class="para m3top">These are some of the most commonly used HTML attributes, and they play a significant role in defining the structure, behavior, and appearance of web pages. Different HTML elements support various attributes, and understanding how to use them effectively is a crucial part of web development.</p>
+        </div>
+    </main>
+</body>
+<script src="../JS/cHTML.js"></script>
+</html>

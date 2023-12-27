@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/coursnav.css">
+    <link rel="stylesheet" href="../CSS/courscomponent.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../pho/webb logo.png">
+            <span>webb tool</span>
+        </div>
+
+        <div class="navbarbox" id="navbarbox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="./homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <div class="responnav" id="responnav">
+        <div class="resplinks">
+            <nav class="responav" id="responav">
+                <a href="../index.html">home</a>
+                <a href="./CHTML/homehtml.html">html</a>
+                <a href="./CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        
+        <div class="menubox" id="menubox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div id="sidenav" >
+            <div style="height: 1.5rem;"></div>  
+        </div>
+        <div id="maincon">
+            <h1 class="mainh1">Mastering HTML Text Elements</h1>
+            <p class="para">we delve deeply into the most crucial and practical HTML text elements that are fundamental to crafting engaging and well-structured web content. We put a strong emphasis on equipping you with the knowledge and skills needed to effectively work with text in HTML.</p>
+            <h2 class="mainh2">1. Headings</h2>
+            <p class="para">They help organize your content into different sections and give it a visual and semantic structure. HTML provides six levels of headings.</p>
+            <p class="para bold"><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code></p>
+
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight8" spellcheck="false">
+<h1>Heading 1 (Most important)</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6 (Least important)</h6>
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+
+            <p class="para">As explained in the previous response, use `<code>&lt;h1&gt;</code>` to `<code>&lt;h1&gt;</code>` for headings with varying levels of importance.</p>
+            <p class="para">HTML headings not only help structure your content visually by making text larger and bold but also provide semantic meaning to your page. Search engines use heading tags to understand the importance and structure of your content, which can impact search engine rankings.</p>
+            <p class="para bold highlight m3top">Use HTML headings for headings only. Don't use headings to make text BIG or bold.</p>
+
+            <h2 class="mainh2">2. Paragraphs</h2>
+            <p class="para bold">Use the <code>&lt;p&gt;</code> element to create paragraphs of text.
+            </p>
+            <p class="para parasmall">Here's how you can use HTML paragraphs:</p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight5" spellcheck="false">
+<p>I am paragraph of text. I can contain multiple sentences and provides a clear separation of content.</p>
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+            <p class="para m3top">You can use the <code>&lt;p&gt;</code> element to create multiple paragraphs, ensuring a clean separation between different blocks of text:</p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight5" spellcheck="false">
+<p>I am first paragraph.</p>
+<p>I am second paragraph. Each paragraph starts on a new line.</p>
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+
+            <p class="para m3top">You can also include other text formatting and styling elements within paragraphs, such as headings, links, and inline styling:</p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight5" spellcheck="false">
+<p>This is a <a href="https://www.example.com">link</a> within a paragraph. You can also add <em>emphasized text</em> and <strong>strong text</strong>, and so on</p>
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+            <p class="para bold">Using <span class="highlight">paragraphs</span> makes your content more organized and scannable, improving the overall readability and user experience of your web page.</p>
+
+            <h2 class="mainh2">3. Text Formatting</h2>
+            <p class="para">HTML provides several elements to format and style text content on web pages. Here are some of the commonly used elements for text formatting:</p>
+
+            <div class="listbox">
+                <ul>
+                    <li>Emphasis: The <code>&lt;em&gt;</code> element is used to emphasize text, typically displayed as italic.</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<p>This is <em>italicized</em> text.</p>
+                            </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+                    <li>Strong: The <code>&lt;strong&gt;</code> element is used for make text bold.</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<p>This is <strong>bold</strong> text.</p>
+                            </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+                    <li>Underline: The <code>&lt;u&gt;</code> element is used to underline text.</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<p>This is <u>underlined</u> text.</p>
+                            </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+                    <li>Superscript and Subscript: The <code>&lt;sup&gt;</code> and <code>&lt;sub&gt;</code> elements are used for superscript and subscript text, respectively.</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<p>E=mc<sup>2</sup> (Einstein's equation)</p>
+<p>H<sub>2</sub>O (Water)</p>
+                            </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+                    <li>Marked Text: The <code>&lt;mark&gt;</code> element is used to highlight or mark text.</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight5" spellcheck="false">
+<p>This is <mark>highlighted</mark> text.</p>
+                            </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="inpro"><p class="para">Remember that while HTML provides basic text formatting, more advanced styling is typically achieved using CSS (Cascading Style Sheets).</p></div>
+
+            <h2 class="mainh2">4. Horizontal Rule, Line Breaks, Comments</h2>
+            <div class="listbox">
+                <ul>
+                    <li>Line Breaks (br): <br>
+                        You can create line breaks within text using the <code>&lt;br&gt;</code> element. This element is especially useful when you want to force a new line within a paragraph or other text content.</li>
+                    <li>Horizontal Rule (hr):
+                            The <code>&lt;hr&gt;</code> element is used to insert a horizontal rule, which is a visible line that can be used to separate content or sections on a page. It creates a clear visual break.</li>
+                    <li>Comments <br>
+                        Comments in HTML are used to add notes or explanations within the code for developers. They are not visible on the web page. You can create comments using the <code>&lt;!--  --&gt;</code> tags.
+                    </li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight10" spellcheck="false">
+<p>This is some text. <br> Here is a new line of text.</p>
+
+<!-- <p>Comments are helpful for documenting your code or temporarily disabling specific sections of HTML.</p> -->
+
+<p>This is some content above the horizontal rule.</p>
+<hr>
+<p>This is some content below the horizontal rule.</p>
+                            </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="inpro m3top">
+                <p class="para">In this course, we comprehensively cover the most important and useful HTML tags and elements that are essential for web development. We focus on providing you with a solid foundation in HTML, ensuring that you acquire the key building blocks necessary to create functional and visually appealing web pages.</p>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="../JS/cHTML.js"></script>
+</html>

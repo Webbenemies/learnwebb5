@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/coursnav.css">
+    <link rel="stylesheet" href="../CSS/courscomponent.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../pho/webb logo.png">
+            <span>webb tool</span>
+        </div>
+
+        <div class="navbarbox" id="navbarbox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../CHTML/homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <div class="responnav" id="responnav">
+        <div class="resplinks">
+            <nav class="responav" id="responav">
+                <a href="../index.html">home</a>
+                <a href="./homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        
+        <div class="menubox" id="menubox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div id="sidenav" >
+            <div style="height: 1.5rem;"></div>  
+        </div>
+        <div id="maincon">
+            <h1 class="mainh1">Unleash the Symphony with Audio Element</h1>
+            <p class="para">the <code>&lt;audio&gt;</code> element is used to embed audio files in a web page. It provides a standardized way to include audio content, allowing users to listen to music, podcasts, or other types of audio directly on the web page.</p>
+            <p class="para">The <code>&lt;audio&gt;</code> element supports various audio formats, and like the <code>&lt;video&gt;</code> element, it includes controls for the user to play, pause, adjust volume, and perform other actions.</p>
+            <p class="para bold">Here is the basic syntax for the <code>&lt;audio&gt;</code> element:</p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight3" spellcheck="false" readonly>
+<audio src="URL_of_audio_file" controls></audio>
+</textarea>
+<audio src="../audi/birds-chirping.mp3" controls class="audiexam"></audio>
+                    <p class="audiocaption">Sound Effect from Pixabay</p>
+                </div>
+            </div>
+<h2 class="mainh2">Let's break down the key attributes commonly used with the audio element:</h2>
+<div class="listbox">
+    <ul>
+        <li><span class="listpointer">src: </span>The <span class="highlight">src</span> attribute is required and specifies the path or URL to the audio file.</li>
+        <p class="para"><code>&lt;audio src="URL_of_audio_file"&gt;</code><code>&lt;/audio&gt;</code></p>
+        <li><span class="listpointer">controls: </span>The <span class="highlight">controls</span> attribute adds playback controls to the audio player, allowing users to play, pause, adjust volume, and perform other actions.</li>
+        <li><span class="listpointer">`autoplay`, `loop`, `muted`, etc. (Optional): </span>Similar to the <code>&lt;video&gt;</code> element, various attributes like <span class="highlight">autoplay</span>, <span class="highlight">loop</span>, and <span class="highlight">muted</span> can be used to control the audio's behavior, such as automatically playing, looping, or starting with muted audio. <a href="./html-video.html" class="openlink">learn html video</a></li>
+    </ul>
+</div>
+<h2 class="mainh2">Fallback Content in audio</h2>
+<p class="para">The content between the opening<code>&lt;audio&gt;</code> tag and the <code>&lt;source&gt;</code> elements provides fallback content that is displayed if the browser does not support the <code>&lt;audio&gt;</code> element.</p>
+
+<div class="coderaper">
+    <h3 class="Example">Example</h3>
+    <div class="codebox">
+        <textarea name="code" class="coode hight5" spellcheck="false"> 
+<audio controls>
+    <source src="../audi/birds-chirping.mp3">
+</audio>            
+        </textarea>
+        <button class="codebtn">see output</button>
+        <iframe class="codeframe"></iframe>
+    </div>
+</div>
+<p class="para">The <code>&lt;audio&gt;</code> element enhances the multimedia capabilities of web pages, providing a standardized way to include audio content and allowing for a more interactive and engaging user experience.</p>
+
+        </div>
+    </main>
+</body>
+<script src="../JS/cHTML.js"></script>
+</html>

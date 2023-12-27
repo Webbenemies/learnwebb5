@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/coursnav.css">
+    <link rel="stylesheet" href="../CSS/courscomponent.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../pho/webb logo.png">
+            <span>webb orbit</span>
+        </div>
+        <div class="links">
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../CHTML/homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <div id="sidenav"></div>
+        <div id="maincon">
+            <h1 class="mainh1">The Art of Color in CSS</h1>
+            <p class="para m3top">
+                In CSS, colors play a crucial role in defining the visual appearance of web pages. CSS provides various ways to specify colors, and understanding the powers of color in CSS is essential for effective web design.</p>
+
+                <p class="para">CSS supports several color values, including:</p>
+                <div class="listbox">
+                    <ol>
+                        <li>Named Colors [ yellow ]</li>
+                        <li>Hexadecimal Notation [ #ff4500 ]</li>
+                        <li>RGB Function [ rgb(255, 0, 255) ]</li>
+                        <li>RGBA Function [ rgba(255, 69, 0, 0.8) ]</li>
+                        <li>HSL Function [ hsl(240, 100%, 50%) ]</li>
+                        <li>HSLA Function [ hsla(60, 100%, 75%, 0.5) ]</li>
+                    </ol>
+                </div>
+
+                <div class="coderaper">
+                    <h3 class="Example">Example</h3>
+                    <div class="codebox">
+                        <textarea name="code" class="coode hight7" spellcheck="false"> 
+<h3 style="background-color: lightcoral;">Backgrounds</h3>
+
+<p style="background-color: lightskyblue;">Colors can be applied to backgrounds using the background-color property. Background images and other properties can also be combined with colors.</p>
+                        </textarea>
+                    </div>
+                </div>
+
+                <div class="outputbox">
+                    <p class="outptext">output</p>
+                    <div class="output">
+                <h3 style="text-align: center; background-color: lightcoral; padding: 1rem; font-size: 2rem; color: white;">Backgrounds</h3>
+                <p style="padding: 1rem; background-color: lightskyblue; margin-top: 0.5rem; font-weight: 600; color: rgb(0, 0, 0);">Colors can be applied to backgrounds using the "background-color" property. Background images and other properties can also be combined with colors.</p>
+                    </div>
+                </div>
+
+                <div class="coderaper ">
+                    <h3 class="Example">Example</h3>
+                    <div class="codebox">
+                        <textarea name="code" class="coode hight7" spellcheck="false"> 
+<h3 style="background-color: lightcoral;">Text Color</h3>
+
+<p style="background-color: lightskyblue;">The color property is used to define the color of text.</p>
+                        </textarea>
+                    </div>
+                </div>
+
+                <div class="outputbox">
+                    <p class="outptext">output</p>
+                    <div class="output">
+                        <h3  style="text-align: center; color: lightcoral; padding: 1rem; font-size: 2rem; background-color: black; ">Text Color</h3>
+
+                        <p  style="padding: 1rem; color: lightskyblue;  font-weight: 600; background-color: black;">The color property is used to define the color of text.</p>
+                    </div>
+                </div>
+                <h2 class="mainh2 ">Color Values</h2>
+                <p class="para">Color values in CSS represent the color of an element and can be specified in various formats. </p>
+
+                <div class="listbox">
+                    <ul>
+                        
+                        <li><span class="listpointer">Named Colors: </span>CSS provides a set of predefined color names that you can use directly. For example:
+                        </li>
+                        <div class="syntax">
+                            <pre>
+                                color: red;
+                                background-color: blue;                                
+                            </pre>
+                        </div>
+
+                        <li><span class="listpointer">Hexadecimal Notation: </span>Hexadecimal values represent colors in the RGB (Red, Green, Blue) color model. It uses a combination of six (or three) hexadecimal digits. For example:
+                        </li>
+                        <div class="syntax">
+                            <pre>
+                                color: #FF0000; /* Red */
+                                background-color: #00FF00; /* Green */ 
+                            </pre>
+                        </div>
+
+                        <li><span class="listpointer">RGB Function: </span>The rgb() function allows you to specify a color using the RGB color model, where you provide the intensity of the red, green, and blue components. Each component ranges from 0 to 255. For example:
+                        </li>
+                        <div class="syntax">
+                            <pre>
+                                color: rgb(255, 0, 0); /* Red */
+                                background-color: rgb(0, 255, 0); /* Green */      
+                            </pre>
+                        </div>
+
+                        <li><span class="listpointer">RGBA Function: </span>Similar to rgb(), the rgba() function includes an additional alpha parameter, representing the opacity of the color (0 being fully transparent, and 1 being fully opaque). For example:
+                        </li>
+                        <div class="syntax">
+                            <pre>
+                                color: rgba(255, 0, 0, 0.5); /* Semi-transparent red */
+                                background-color: rgba(0, 255, 0, 0.7); /* Semi-transparent green */
+                                                            
+                        </pre>
+                        </div>
+
+                        <li><span class="listpointer">HSL Function: </span>The hsl() function allows you to specify a color using the HSL (Hue, Saturation, Lightness) color model. For example:
+                        </li>
+                        <div class="syntax">
+                            <pre>
+                                color: hsl(0, 100%, 50%); /* Red */
+                                background-color: hsl(120, 100%, 50%); /* Green */
+                                                             
+                            </pre>
+                        </div>
+
+                        <li><span class="listpointer">HSLA Function: </span>Similar to hsl(), the hsla() function includes an additional alpha parameter for transparency.
+                        </li>
+                        <div class="syntax">
+                            <pre>
+                                color: hsla(0, 100%, 50%, 0.5); /* Semi-transparent red */
+                                background-color: hsla(120, 100%, 50%, 0.7); /* Semi-transparent green */   
+                            </pre>
+                        </div>
+            
+                    </ul>
+                </div>
+                <p class="para">These examples showcase different ways to express colors in CSS. Be Confident to experiment with these values to create the desired visual effects on your webpage. Keep in mind that the values inside these examples are just placeholders, and you can adjust them according to your design preferences.</p>
+                <div class="inpro m3top">
+                    <p class="para">
+                        The most commonly used color values in CSS include a combination of named colors, hexadecimal values, and RGB representations.</p>
+                </div>
+
+                <h2 class="mainh2">Custom Properties for Color:</h2>
+
+                <div class="csseditor">
+                    <div class="writecode">
+                        <textarea  class="codearea" spellcheck="false" name="csseditor">
+<div class="card">
+<h2>card</h2>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit Omnis, quibusdam!</p>
+
+<button>submit</button>
+</div>
+                        </textarea>
+                        <textarea  class="codearea" spellcheck="false" name="csseditor">
+/* Define a CSS variables */
+:root {
+    --main-text-color: orangered; 
+    --main-bg-color: black;
+    --text-color: white;
+    --main-padding: 5px;
+}
+/* Define a CSS variables */
+ 
+/* Use the variables */
+.card{
+    color: var(--main-text-color);
+    padding: var(--main-padding);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--main-bg-color);
+}
+
+p{
+    color: var(--text-color);
+}
+/* Use the variables */
+                        </textarea>
+                    </div>
+                    <div class="showcode">
+                        <iframe class="codeoutput" frameborder="0"></iframe>
+                    </div>
+                </div>
+    <p class="para">Custom Properties, often referred to as CSS Variables, are a feature in CSS that allow you to define reusable values in your stylesheets. While they can be used for various purposes, including colors, let's specifically explore how you can use CSS Variables for color values.</p>
+    <p class="para">In this example:</p>
+
+    <div class="listbox">
+        <ul>
+            <li>The <span class="highlight">:root</span> pseudo-class is used to define global CSS variables. The double dash <span class="highlight">(--)</span> indicates a variable.</li>
+            <li>CSS Variables are then used throughout the stylesheet using the <span class="highlight">var()</span> function. This function allows you to reference the value of a variable wherever a value is expected.</li>
+            <li>By using CSS Variables, you can easily update the color scheme of your website by modifying the variable values in one central location <span class="highlight">(the :root selector)</span>  instead of searching and changing each individual occurrence of a color value.</li>
+        </ul>
+    </div>
+    <p class="para">CSS Variables provide a way to make your stylesheets more maintainable and flexible. They can be especially useful for managing color schemes, as you can update colors in a centralized manner, making it easier to maintain a consistent design across your website.</p>
+    <p class="para">Once you've mastered CSS colors, you might consider diving into advanced topics </p>
+        </div>
+    </main>
+</body>
+<script src="../JS/cCSS.js"></script>
+</html>

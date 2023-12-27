@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/coursnav.css">
+    <link rel="stylesheet" href="../CSS/courscomponent.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../pho/webb logo.png">
+            <span>webb tool</span>
+        </div>
+
+        <div class="navbarbox" id="navbarbox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../CHTML/homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <div class="responnav" id="responnav">
+        <div class="resplinks">
+            <nav class="responav" id="responav">
+                <a href="../index.html">home</a>
+                <a href="./homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        
+        <div class="menubox" id="menubox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div id="sidenav" >
+            <div style="height: 1.5rem;"></div>  
+        </div>
+        <div id="maincon">
+            <h1 class="mainh1">Mission Briefing: HTML Media Exploration</h1>
+            <p class="para">let's embark on a mission to explore the fascinating world of HTML media! Our goal is to understand how HTML allows us to integrate various forms of media into our web pages, making them dynamic and engaging.</p>
+            <p class="para m3top">HTML supports various types of media elements, each designed for different types of content. The main types of HTML media elements include:</p>
+            <div class="listbox">
+                <ol>
+                    <li><code>&lt;img&gt;</code></li>
+                    <li><code>&lt;video&gt;</code></li>
+                    <li><code>&lt;audio&gt;</code></li>
+                    <li><code>&lt;iframe&gt;</code></li>
+                    <li><code>&lt;embed&gt;</code></li>
+                </ol>
+            </div>
+            <h2 class="mainh2">Understand the Power of <code>&lt;img&gt;</code> Element</h2>
+            <p class="para">the <code>&lt;img&gt;</code> element is used to embed images in a web page. It stands for "image." The <code>&lt;img&gt;</code> element is an empty, self-closing tag, meaning it doesn't have a closing tag. It is used to display static images or provide a placeholder for dynamic images.</p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight5" spellcheck="false">
+<img src="https://cdn.pixabay.com/photo/2019/08/29/19/48/cobweb-4439844_1280.jpg" alt="Spider" width="310px">                        
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe hight15"></iframe>
+                </div>
+            </div>
+            <p class="para m3top">
+                The <code>&lt;img&gt;</code> element has various attributes that allow you to control the appearance and behavior of the image. Here are some common attributes associated with the <code>&lt;img&gt;</code> element:
+            </p>
+            <div class="listbox">
+                <ul>
+                    <li><span class="listpointer">src (Source): </span>This attribute is required, and it specifies the path or URL to the image file.</li>
+                    <li><span class="listpointer">alt (Alternative Text): </span>The <span class="highlight">alt</span> attribute provides alternative text for the image, which is displayed if the image cannot be loaded. It also helps with accessibility for users who rely on screen readers.</li>
+                    <li><span class="listpointer">`width` and `height`: </span>These attributes control the dimensions of the image in pixels. They allow you to specify the width and height of the image, helping you control the layout of your page while the image is loading.</li>
+                    <li><span class="listpointer">title: </span>The <span class="highlight">title</span> attribute provides additional information about the image. When a user hovers over the image, the title text may be displayed as a tooltip.</li>
+                    <li><span class="listpointer">loading: </span>The <span class="highlight">loading</span> attribute is used to control how the image should be loaded. Possible values are <span class="highlight">auto</span>, <span class="highlight">eager</span> and <span class="highlight">lazy</span>. The default is usually <span class="highlight">auto</span>, which means the browser decides when to load the image.</li>
+                </ul>
+            </div>
+            <p class="para">These attributes give you control over how images are displayed and enhance the accessibility and performance of your web pages.</p>
+            <div class="inpro">
+
+                <p class="para m3top">As you move forward in your coding endeavors, remember to practice what you've learned. Experiment with different attributes, styles, and layouts to deepen your understanding of HTML and web development. If you encounter challenges or have questions about other HTML elements or web technologies, don't hesitate to seek further knowledge and explore new concepts.</p>
+            </div>
+            </div>
+    </main>
+</body>
+<script src="../JS/cHTML.js"></script>
+</html>

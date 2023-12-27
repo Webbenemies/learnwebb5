@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/coursnav.css">
+    <link rel="stylesheet" href="../CSS/courscomponent.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../pho/webb logo.png">
+            <span>webb tool</span>
+        </div>
+
+        <div class="navbarbox" id="navbarbox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../CHTML/homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <div class="responnav" id="responnav">
+        <div class="resplinks">
+            <nav class="responav" id="responav">
+                <a href="../index.html">home</a>
+                <a href="./homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        
+        <div class="menubox" id="menubox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div id="sidenav" >
+            <div style="height: 1.5rem;"></div>  
+        </div>
+        <div id="maincon">
+            <h1 class="mainh1">let's chackout list</h1>
+            <p class="para">A list is a collection of items, and it can take different forms.</p>
+            <p class="para">HTML provides various ways to create lists on a webpage. There are 3 main types of lists in HTML</p>
+            <div class="photobox">
+                <img src="../pho/list.png"class="photo">
+                <p class="photop">html list</p>
+            </div>
+            <div class="listbox">
+                <ol>
+                    <li>ordered lists</li>
+                    <li>unordered lists</li>
+                    <li>and Description lists</li>
+                </ol>
+            </div>
+
+
+            <p class="para">These lists provide a way to structure and organize information on a webpage. They can be used individually or nested within each other to create more complex structures.
+            </p>
+            <h2 class="mainh2">Ordered lists <code>[ &lt;ol&gt; ]</code></h2>
+            <p class="para">Ordered lists are used when the order of the items is important. They are created using the <code>&lt;ol&gt;</code> (ordered list) element, and each item in the list is defined with the <code>&lt;li&gt;</code>  element.</p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight7" spellcheck="false">
+<ol>
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+</ol>     
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+            <p class="para m3top">You can also use different types of numbering or lettering by using the <span class="highlight">type</span> attribute. </p>
+            <p class="para">This type overrides the one used by its parent <code>&lt;ol&gt;</code> element, if any.</p>
+            <p class="para">Common values include:</p>
+            <div class="listbox">
+                <ul>
+                    <li><span class="listpointer">A: </span>uppercase letters</li>
+                    <li type=""><span class="listpointer">a: </span>lowercase letters</li>
+                    <li><span class="listpointer">I: </span>uppercase Roman numerals</li>
+                    <li><span class="listpointer">i: </span>lowercase Roman numerals</li>
+                    <li><span class="listpointer">1: </span>numbers</li>
+                </ul>
+            </div>
+
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight19" spellcheck="false">
+<ol type="A">
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+</ol>     
+
+<ol type="I">
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+</ol>     
+
+<ol type="1">
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+</ol>     
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe hight15"></iframe>
+                </div>
+            </div>
+
+            <p class="para m3top">The <span class="highlight">start</span> attribute can be used to specify the starting value of the ordered list:</p>
+
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight7" spellcheck="false">
+<ol start="5">
+    <li>Item 5</li>
+    <li>Item 6</li>
+    <li>Item 7</li>
+</ol>
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+
+            <h2 class="mainh2">Unordered List <code>[ &lt;ol&gt; ]</code></h2>
+            <p class="para">Unordered lists in HTML are created using the <code>&lt;ul&gt;</code> (unordered list) element. Each item in the list is defined using the <code>&lt;li&gt;</code> (list item) element. Unordered lists are often used when the order of items is not significant, and each item is typically marked with a bullet point.</p>
+            <p class="para bold">Basic Unordered List:</p>
+
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight7" spellcheck="false">
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+<p class="para m3top bold"><span class="highlight">type</span> attribute in unordered list</p>
+<div class="listbox">
+    <ul>
+        <li><span class="listpointer">disc (default): </span>Solid disc</li>
+        <li><span class="listpointer">circle: </span>Hollow circle</li>
+        <li><span class="listpointer">square: </span>Solid square</li>
+    </ul>
+</div>
+
+<div class="coderaper">
+    <h3 class="Example">Example</h3>
+    <div class="codebox">
+        <textarea name="code" class="coode hight19" spellcheck="false">
+<ul type="disc">
+<li>First Item</li>
+<li>Second Item</li>
+<li>Third Item</li>
+</ul>     
+
+<ul type="circle">
+<li>First Item</li>
+<li>Second Item</li>
+<li>Third Item</li>
+</ul>     
+
+<ul type="square">
+<li>First Item</li>
+<li>Second Item</li>
+<li>Third Item</li>
+</ul>     
+        </textarea>
+        <button class="codebtn">see output</button>
+        <iframe class="codeframe hight15"></iframe>
+    </div>
+</div>
+<p class="para">These attributes provide some control over the appearance and behavior of unordered lists in HTML. Keep in mind that styling can also be achieved through CSS for more fine-grained control over the visual presentation of the list.</p>
+
+<h2 class="mainh2">Description list</h2>
+<p class="para">Description lists <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code>, <code>&lt;dd&gt;</code>  in HTML are used to create a list of terms and their corresponding descriptions.</p>
+<div class="coderaper">
+    <h3 class="Example">Example</h3>
+    <div class="codebox">
+        <textarea name="code" class="coode hight15" spellcheck="false">
+<dl>
+    <dt>Term 1</dt>
+    <dd>Description 1</dd>
+              
+    <dt>Term 2</dt>
+    <dd>Description 2</dd>
+              
+    <dt>Term 3</dt>
+    <dd>Description 3</dd>
+</dl>
+        </textarea>
+        <button class="codebtn">see output</button>
+        <iframe class="codeframe"></iframe>
+    </div>
+</div>
+
+<p class="para">The <code>&lt;dl&gt;</code> element defines the description list</p>
+<p class="para">The <code>&lt;dt&gt;</code> element is used to define the term (or name)</p>
+<p class="para">The <code>&lt;dd&gt;</code> element is used to define the description.</p>
+<p class="para">These elements don't have any specific attributes, you can use CSS to style them for better presentation. For example, you can use styles to adjust the font size, color, spacing, and other visual aspects of the description list.</p>
+        </div>
+    </main>
+</body>
+<script src="../JS/cHTML.js"></script>
+</html>

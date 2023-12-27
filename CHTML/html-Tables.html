@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/coursnav.css">
+    <link rel="stylesheet" href="../CSS/courscomponent.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../pho/webb logo.png">
+            <span>webb tool</span>
+        </div>
+
+        <div class="navbarbox" id="navbarbox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../CHTML/homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <div class="responnav" id="responnav">
+        <div class="resplinks">
+            <nav class="responav" id="responav">
+                <a href="../index.html">home</a>
+                <a href="./homehtml.html">html</a>
+                <a href="../CCSS/home-css.html">css</a>
+                <a href="#">javascript</a>
+                <a href="#">react js</a>
+                <button>dark</button>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        
+        <div class="menubox" id="menubox">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+        <div id="sidenav" >
+            <div style="height: 1.5rem;"></div>  
+        </div>
+        <div id="maincon">
+            <h1 class="mainh1">fundamentals of html table</h1>
+            <p class="para m3top">A table is a structured set of data organized in rows and columns. Tables are commonly used to display information in a tabular form, making it easier for users to understand and compare data. HTML provides specific elements for creating tables, including <code>&lt;table&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;tr&gt;</code>, and <code>&lt;td&gt;</code>.</p>
+            <p class="para bold">Basic Table Structure:</p>
+            <div class="coderaper">
+                <h3 class="Example">Example</h3>
+                <div class="codebox">
+                    <textarea name="code" class="coode hight20" spellcheck="false">
+<table border="1" style="border-collapse: collapse;">
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+    </tr>
+    <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+        <td>Row 1, Cell 3</td>
+    </tr>
+    <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+        <td>Row 2, Cell 3</td>
+    </tr>
+ </table>
+                           
+                    </textarea>
+                    <button class="codebtn">see output</button>
+                    <iframe class="codeframe"></iframe>
+                </div>
+            </div>
+            <p class="para">This creates a simple table with 3 columns and 2 rows.</p>
+            <h2 class="mainh2">brief overview of these key table-related HTML elements:</h2>
+
+            <!-- img -->
+
+            <div class="listbox">
+                <ul>
+                    <li><code>&lt;table&gt;</code>: This is the main container element for the table. All the other table elements are nested within this tag.</li>
+                    <li> <code>&lt;tr&gt;</code>: Stands for "table row" and is used to define a row in the table. It contains one or more <code>&lt;th&gt;</code> (table header) or <code>&lt;td&gt;</code> (table data/cell) elements.</li>
+                    <li><code>&lt;th&gt;</code>: Represents a header cell in the table. It is typically used in the first row or first column to label the data in that row or column. Text in <code>&lt;th&gt;</code> elements is usually bold and centered.</li>
+                    <li><code>&lt;td&gt;</code>: Represents a standard data cell in the table. It is used to contain the actual data that is being displayed. Text in <code>&lt;td&gt;</code> elements is typically not bold and left-aligned.</li>
+                    <li><code>&lt;caption&gt;</code>: An optional element that can be used to provide a title or a brief description for the table. It is placed immediately after the opening <code>&lt;table&gt;</code> tag.</li>
+                </ul>
+            </div>
+
+
+            <h2 class="mainh2">Attributes for table</h2>
+            <div class="listbox">
+                <ol>
+                    <li><span class="highlight">border: </span>Specifies the width of the border around the table. Common values are 0 (no border) or 1 (default).</li>
+                    <li><span class="highlight">width: </span>Sets the width of the table. This can be specified in pixels or percentage.</li>
+                    <li><span class="highlight">cellspacing and cellpadding: </span> Controls the space between cells and the padding within cells, respectively.</li>
+                    <li><span class="highlight">colspan and rowspan: </span> You can use the <span class="highlight">colspan</span> and <span class="highlight">rowspan</span> attributes to make a cell span multiple columns or rows.</li>
+                    <div class="coderaper">
+                        <h3 class="Example">Example</h3>
+                        <div class="codebox">
+                            <textarea name="code" class="coode hight20" spellcheck="false">
+<table border="1" width="50%" cellspacing="5" cellpadding="9" style="border-collapse: collapse;">
+    <tr>
+        <th colspan="2">Header 1</th>
+        <th>Header 2</th>
+    </tr>
+    <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+        <td rowspan="2">Row 1, Cell 3</td>
+    </tr>
+    <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+    </tr>
+</table>
+                            </textarea>
+                            <button class="codebtn">see output</button>
+                            <iframe class="codeframe"></iframe>
+                        </div>
+                    </div>
+                </ol>
+            </div>
+            <p class="para bold">Personally, I have been working with HTML in web development for long time but haven't used HTML tables.
+            </p>
+            <div class="inpro m5top">
+            <p class="para"> But It's important to note that the decision to use or avoid HTML tables depends on the specific requirements of each project. If your current approach is meeting your needs and aligning with best practices for the type of content you're creating, there may be no need to incorporate tables. However, tables can still be a valuable tool when presenting actual tabular data on a webpage. </p>
+            <div class="display"></div>
+        </div>
+
+        </div>
+    </main>
+</body>
+<script src="../JS/cHTML.js"></script>
+</html>
